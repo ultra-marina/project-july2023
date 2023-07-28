@@ -1,0 +1,118 @@
+.hero-section {
+    padding-top: 40px;
+    
+}
+.hero-container {
+    max-width: 428px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 23px;
+    padding-left: 20px;
+}
+.hero-header {
+    font-family: DM Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; 
+    letter-spacing: -1.62px;
+    margin-bottom: 14px;
+}
+.hero-header-span {
+    background: var(--linear-green, linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: DM Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -1.62px;
+   
+
+}
+.hero-description {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+    letter-spacing: -0.28px;
+    margin-bottom: 24px;
+    }
+
+.hero-image {
+    background-image: url(../img/hero/background.png);
+    background-repeat: no-repeat;
+    border-radius: 24px;
+    
+
+}   
+.hero-button-li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 64px;
+}
+.hero-button {
+    color: #F6F5EF;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; 
+    letter-spacing: -0.63px;
+    display: flex;
+    padding: 14px 28px;
+    align-items: flex-start;
+    gap: 10px;
+    background: var(--light-green, #93ABAE);
+    border-radius: 60px;
+    border: none;
+    cursor: pointer;
+    }
+.hero-link {
+    color: var(--white, #F6F5EF);
+    background-color: var(--dark-blue);
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 15.4px */
+    letter-spacing: -0.63px;
+    border-radius: 60px;
+    border: 1px solid var(--white, #F6F5EF);
+    padding: 14px 28px;
+    cursor: pointer;
+}
+.hero-button:hover,
+.hero-button:focus {
+    background: #88B3B9;
+}  
+.hero-link:hover,
+.hero-link:focus {
+    color: #93ABAE;
+    border: 1px solid #93ABAE;
+}  
+.pic-list {
+    display: flex;
+    padding-top: 24px;
+    margin-bottom: 13px;
+    margin-left: 24px;
+}
+.pic-list-headshot {
+    border-radius: 56px;
+    border: 2px solid #93ABAE;
+    min-width: 48px;
+}
+.hero-subheader {
+    color: #11131F;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 15.4px */
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+}
