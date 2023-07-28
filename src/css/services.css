@@ -1,0 +1,40 @@
+h2 {
+    display: none;
+}
+
+.services-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.services-item {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.services-img {
+    border-radius: 40px;
+    background: linear-gradient(0deg, rgba(17, 19, 31, 0.20) 0%, rgba(17, 19, 31, 0.20) 100%), url(<path-to-image>), lightgray -15.688px -136.978px / 138.209% 164.622% no-repeat;
+}
+
+.services-name {
+    position: absolute;
+    display: inline-flex;
+    padding: 14px 28px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 60px;
+    background: var(--white, #F6F5EF);
+    color: var(--dark-blue, #11131F);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -0.63px;
+    bottom: 24px;
+    left: 24px;
+}
