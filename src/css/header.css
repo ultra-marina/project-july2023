@@ -1,13 +1,42 @@
-.header {}
+.header {
+}
 
-.header-container {}
+.container {}
 
-.header-nav {}
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
 
-.header-link-logo {}
+.header-logotype {
+    display: flex;
+    margin: 32px 0;
+}
 
-.header-list {}
+.header-logo {}
+
+.header-logo-link {
+    color: var(--white);
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 24px;
+    margin: 35px 0;
+}
 
 .header-item {}
 
-.header-link {}
+.header-link {
+    font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.18;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+}
+
