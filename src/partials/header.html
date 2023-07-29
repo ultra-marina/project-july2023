@@ -1,12 +1,18 @@
 <header class="header">
     <div class="header container">
         <nav class="header-nav">
+            <!-- логотип -->
             <div class="header-logotype">
-            <svg class="header-logo" width="23" height="23">
-              <use href="../img/header/icons-header.svg#mask0_3500_15"></use>
-            </svg>
+            <img class="header-logo-img" src="../img/header/header-logo.svg" alt="">
             <a class="header-logo-link link" href="../index.html">YACHT ADVENTURES</a>
             </div>
+            <!-- мобільне меню -->
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="menu-toggle-icon" width="24" height="24">
+                    <use href="../img/header/header-icon.svg#header-burger"></use>
+                </svg>
+            </button>
+            <!-- навігація -->
             <ul class="header-list list">
                 <li class="header-item">
                     <a class="header-link link" href="">ABOUT</a>
@@ -21,3 +27,32 @@
         </nav>
     </div>
 </header>
+<!-- мобільне меню -->
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="header-logotype-menu">
+        <img class="header-logo-img" src="../img/logo-sail.svg" alt="">
+        <a class="header-logo-link link" href="../index.html">YACHT ADVENTURES</a>
+    </div>
+    <button class="menu-toggle js-close-menu">
+        <svg class="menu-toggle-icon-x" width="24" height="24">
+            <use href="../img/header/header-icon.svg#header-x"></use>
+        </svg>
+    </button>
+
+    <ul class="mobile-menu">
+        <li class="mobile-menu-item"><a href="" class="mobile-menu-link link">ABOUT</a></li>
+        <li class="mobile-menu-item"><a href="" class="mobile-menu-link link">YACHTS</a></li>
+        <li class="mobile-menu-item"><a href="" class="mobile-menu-link link">REVIEWS</a></li>
+        
+    </ul>
+
+    <!-- <img class="mobile-menu-ellipse" src="../img/header/Ellipse7273.png" width="279" height="279"> -->
+    <!-- <img class="mobile-menu-ellipse" src="../img/header/Ellipse7272.png" width="279" height="279"> -->
+</div>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+<script defer src="../mobile-menu.js"></script>
+
