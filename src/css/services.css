@@ -1,4 +1,5 @@
 .services {
+    /* display: flex; */
     min-width: 320px;
     margin-left: auto;
     margin-right: auto;
@@ -27,16 +28,35 @@
     gap: 24px;
 }
 
+@media only screen and (min-width: 429px) {
+    .services-list {
+        max-width: 100%;
+        gap: 32px;
+    }
+        .fishing-item {
+        display: flex;
+        justify-content: flex-end;
+    }
+        .sunbating-item {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
 @media only screen and (min-width: 769px) {
     .services-list {
-        flex-direction: row;
         display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 100%;
+        gap: 64px;
+        /* flex-basis: calc((100% - 64px) / 2); */
     }
 }
 
 .services-item {
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 .services-img {
@@ -48,15 +68,18 @@
 
 @media only screen and (min-width: 429px) {
     .services-img {
-        background: linear-gradient(0deg, rgba(17, 19, 31, 0.20) 0%, rgba(17, 19, 31, 0.20) 100%), url(<path-to-image>), lightgray -4.545px -69.718px / 102.045% 135.611% no-repeat;
+        max-width: 100%;
+        /* display: block; */
     }
 }
 
 @media only screen and (min-width: 769px) {
     .services-img {
-        background: linear-gradient(0deg, rgba(17, 19, 31, 0.20) 0%, rgba(17, 19, 31, 0.20) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+        max-width: 100%;
+        /* display: block; */
     }
 }
+
 @media only screen and (min-width: 429px) {
     .diving {
         width: 704px;
