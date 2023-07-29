@@ -49,11 +49,49 @@ body {
   padding: 0;
 }
 
-.list {
-  list-style: none;
+.section {
+  padding-bottom: 80px;
+}
+@media only screen and (min-width: 768px) {
+  .section {
+    padding-bottom: 100px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .section {
+    padding-bottom: 164px;
+  }
 }
 
-.link {
-  text-decoration: none;
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .container {
+    min-width: 1280px;
+  }
 }
 
+/* ========== Card set ========== */
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+
+.card-set-item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
