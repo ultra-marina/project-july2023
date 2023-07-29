@@ -144,10 +144,7 @@
   }
 }
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: var(--light-green);
-}
+
 
 .menu-container {
   position: fixed;
@@ -169,7 +166,7 @@
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  color: var(--white);
 }
 
 .mobile-menu {
@@ -190,7 +187,7 @@
 
 .mobile-menu .link {
   display: block;
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
 }
 
