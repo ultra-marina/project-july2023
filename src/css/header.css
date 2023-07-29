@@ -110,6 +110,13 @@
   |============================
 */
 
+.header-logotype-menu {
+    padding: 0 20px;
+    display: flex;
+    margin: 24px 0;
+    gap: 8px;
+    align-items: center;
+}
 .menu-toggle-icon {
     fill: var(--white);
 }
@@ -139,7 +146,7 @@
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--light-green);
 }
 
 .menu-container {
@@ -148,7 +155,6 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 0 20px;
   background-color: var(--dark-blue);
   z-index: 999;
   transform: translateX(100%);
@@ -170,7 +176,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 164px;
+    margin-top: 164px;
 }
 
 .mobile-menu::after {
@@ -200,4 +206,12 @@
     line-height: 1.18;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+}
+
+.mobile-menu-ellipse {
+    border-radius: 279px;
+    opacity: 0.6000000238418579;
+    background: #91AFBA;
+    filter: blur(100px);
+    
 }
