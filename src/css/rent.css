@@ -2,7 +2,9 @@
     min-width: 320px;
     max-width: 395px;
     flex-direction: column;
+   
 }
+
 
 .rent-title {
     color: var(--white);
@@ -14,11 +16,19 @@
 }
 
 .rent-input-div {
-    
+    width: 335px;
+height: 1px;
+color: brown;
 }
 
 .rent-input {
     border-top: 0;
     border-right: 0;
     border-left: 0;
+    
 }
+
+.rent-button {
+background-color: black;
+}
+
