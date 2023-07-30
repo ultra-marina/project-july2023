@@ -1,0 +1,63 @@
+.rent-container {
+  background: var(--dark-blue, #11131f);
+  min-width: 320px;
+  max-width: 395px;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.rent-container-div {
+  padding-bottom: 40px;
+}
+
+.rent-title {
+  color: var(--white);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -1.62px;
+  margin-bottom: 16px;
+}
+
+.rent-input {
+  background: var(--dark-blue);
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: var(--white);
+  margin-bottom: 24px;
+  width: 100%;
+  color: var(--white);
+}
+
+.rent-button {
+  background: var(--dark-blue);
+  border-radius: 60px;
+  border: 1px solid var(--white);
+  display: flex;
+  padding: 14px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  color: var(--white);
+  margin-top: 24px;
+}
+.rent-label {
+  color: var(--white);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.63px;
+  margin-top: 16px;
+}
+
+.rent-textarea {
+  background: var(--dark-blue);
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: var(--white);
+  color: var(--white);
+  width: 100%;
+  height: 58px;
+}

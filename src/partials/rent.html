@@ -1,3 +1,44 @@
 <section class="rent">
-  <div class="container">RENT</div>
+  <div class="container rent-container">
+    <div class="rent-container-div">
+      <h2 class="rent-title">Rent a yacht now</h2>
+      <img src="../img/rent.img/imgyaht1.jpg" alt="yacht-rent" />
+    </div>
+    <div class="rent-container-form">
+      <form class="rent-form">
+        <!-- Name -->
+        <label for="user-name" class="rent-label">Full Name</label>
+        <div class="rent-input-div">
+          <input type="text" id="user-name" class="rent-input" />
+        </div>
+        <!-- Email -->
+        <label for="user-email" class="rent-label">Email</label>
+        <div class="rent-input-div">
+          <input type="text" id="user-email" class="rent-input" />
+        </div>
+        <!-- Phone -->
+        <label for="user-phone" class="rent-label">Phone number</label>
+        <div class="rent-input-div">
+          <input type="text" id="user-phone" class="rent-input" />
+        </div>
+        <!-- comment -->
+        <label for="user-comment" class="rent-label">Comment</label>
+        <div class="rent-comment">
+          <textarea
+            name="user-comment"
+            id="user-comment"
+            cols="30"
+            rows="10"
+            class="rent-textarea"
+          ></textarea>
+        </div>
+      </form>
+      <button type="submit" class="rent-button">
+        Send
+        <svg width="18px" height="8.66px">
+          <use href="../img/rent.img/symbol-defs.svg#icon-Arrow"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 </section>
