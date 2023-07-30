@@ -1,0 +1,16 @@
+.yachtswiper-list {
+    --indent: 6px;
+    --items: 1;
+}
+
+.yachtswiper-img {
+    display: block;
+}
+
+.yachtswiper-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 137px;
+    text-transform: uppercase;
+}
