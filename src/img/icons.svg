@@ -15,6 +15,12 @@
     <symbol id="icon-ellipse-services" viewBox="0 0 16 32">
       <path fill="#91afba" style="fill: var(--color1, #91afba)" opacity="0.6" d="M5.382 10.36c3.128 3.219 3.047 8.356-0.182 11.474s-8.383 3.036-11.511-0.183c-3.128-3.219-3.047-8.356 0.182-11.474s8.383-3.036 11.511 0.183z"></path>
     </symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 72 32">
+      <path d="m50 0 22 16-22 16V18.771H0v-5.543h50V-.001z"/>
+    </symbol>
+    <symbol id="icon-arrow-left" viewBox="0 0 72 32">
+      <path d="M22 0 0 16l22 16V18.771h50v-5.543H22V-.001z"/>
+    </symbol>
 </defs>
 </svg>
 
