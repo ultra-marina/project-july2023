@@ -15,20 +15,49 @@
     margin-bottom: 32px;
   }
 }
+@media only screen and (min-width: 1280px) {
+  .yachts-list {
+    display: flex;
+  }
+}
 @media only screen and (min-width: 768px) {
   .yacht-under-list {
     display: flex;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .yachts-list-first-item {
+    margin-left: 340px;
+  }
+  .yachts-list-first-item img {
+    max-width: 533px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .yachts-list-second-item {
+    position: absolute;
+    left: 32px;
+    max-width: 308px;
+    top: 400px;
   }
 }
 .yachts-list-last-item {
   position: absolute;
   right: 20px;
 }
+
 @media only screen and (min-width: 768px) {
   .yachts-list-last-item {
     position: relative;
     left: 0;
     top: 200px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .yachts-list-last-item {
+    position: absolute;
+    left: 372px;
+    top: 640px;
   }
 }
 .yachts-list-item {
