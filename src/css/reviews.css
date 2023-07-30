@@ -1,0 +1,128 @@
+
+.pre-reviews-list{
+    display: flex;
+align-items: flex-start;
+justify-content: space-between;
+gap: 446px;
+margin-bottom: 64px;
+}
+.pre-reviews-main{
+color: var(--white, #F6F5EF);
+font-family: 'DM Sans';
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%;
+letter-spacing: -1.44px;  
+}
+.span-pre-reviews-text{
+    color: var(--linear-green);
+font-family: 'DM Sans', sans-serif;
+font-size: 32px;
+font-style: italic;
+font-weight: 500;
+line-height: 120%; /* 38.4px */
+letter-spacing: -1.44px;
+}
+.pre-reviews-paragraph{
+    color: var(--white, #F6F5EF);
+font-family: DM Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+letter-spacing: -0.32px;
+}
+.reviews-list{
+    display: flex;
+align-items: center;
+gap: 32px;
+
+}
+.review{
+    display: flex;
+
+flex-direction: column;
+align-items: center;
+background-color: #1f212d;
+border-radius: 24px;
+padding: 32px 25px;
+}
+.review-customer-name{
+    color: var(--white, #F6F5EF);
+text-align: center;
+font-family: DM Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 110%; /* 19.8px */
+letter-spacing: -0.81px;
+margin-top: 24px;
+}
+.customer-review{
+    align-self: stretch;
+    color: rgba(246, 245, 239, 0.50);
+text-align: center;
+font-family: DM Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+letter-spacing: -0.32px;
+margin-top: 8px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+.pre-reviews-list{
+    gap: 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+
+}
+.pre-reviews-main{
+    max-width: 497px;
+    width: 100%;
+}
+.pre-reviews-list .pre-reviews-paragraph{
+    max-width: 273px;
+}
+
+#review-3{
+    display: none;
+}
+}
+@media screen and (max-width: 767px) {
+    .pre-reviews-list{
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+    .pre-reviews-main,
+    .span-pre-reviews-text{
+        font-size: 24px;
+        letter-spacing: -1.08px;
+    }
+    .pre-reviews-paragraph{
+        font-size: 14px;
+        letter-spacing: -0.28px;
+    }
+    #review-2, #review-3{
+        display: none;
+    }
+    .review{
+        padding: 24px;
+    }
+    .customer-image{
+        width: 48px;
+        height: 48px;
+    }
+    .review-customer-name{
+        font-size: 16px;
+        letter-spacing: -0.72px;
+    }
+    .customer-review{
+        font-size: 12px;
+        letter-spacing: -0.32px;
+    }
+}
