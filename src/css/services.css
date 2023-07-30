@@ -28,6 +28,21 @@
     gap: 24px;
 }
 
+@media only screen and (max-width: 429px) {
+.services-2item {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+}
+
+@media only screen and (max-width: 429px) {
+.sunbating-item {
+    display: flex;
+    justify-content: center;
+}
+}
+
 @media only screen and (min-width: 429px) {
     .services-list {
         max-width: 100%;
@@ -41,19 +56,33 @@
         display: flex;
         justify-content: flex-start;
     }
+
+    .services-2item {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
 }
 
 @media only screen and (min-width: 769px) {
     .services-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width: 100%;
         gap: 64px;
     }
 
+    .services-2item {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 64px;
+        width: 100%;
+    }
+    
     .services-item {
         width: calc(100% - 64px);
+    }
+
+    .fishing-item {
+        justify-content: normal;
     }
 
     .sunbating-item {
