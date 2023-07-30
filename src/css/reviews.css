@@ -1,7 +1,4 @@
-.reviews  {
-    margin-left:32px;
-margin-right: 32px;
-}
+
 .pre-reviews-list{
     display: flex;
 align-items: flex-start;
@@ -96,10 +93,6 @@ margin-top: 8px;
 }
 }
 @media screen and (max-width: 767px) {
- .reviews {
-    margin-left:20px;
-    margin-right:20px;
-    }
     .pre-reviews-list{
         flex-direction: column;
         gap: 24px;
