@@ -18,8 +18,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/project-july2023/assets/index-1de2df81.js"></script>
-    <link rel="stylesheet" href="/project-july2023/assets/index-c32b37b7.css">
+    <script type="module" crossorigin src="/project-july2023/assets/index-3d8a8df8.js"></script>
+    <link rel="stylesheet" href="/project-july2023/assets/index-1a0ad40f.css">
   </head>
   <!--Content-->
   <body>
@@ -217,11 +217,78 @@
 </section>
 
       <section class="rent">
-  <div class="container">RENT</div>
+  <div class="container rent-container">
+    <div class="rent-container-div">
+      <h2 class="rent-title">Rent a yacht now</h2>
+      <img src="../img/rent.img/imgyaht1.jpg" alt="yacht-rent" />
+    </div>
+    <div class="rent-container-form">
+      <form class="rent-form">
+        <!-- Name -->
+        <label for="user-name">Full Name</label>
+        <div class="rent-input-div">
+          <input type="text" id="user-name" class="rent-input" />
+        </div>
+        <!-- Email -->
+        <label for="user-email">Email</label>
+        <div class="rent-input-div">
+          <input type="text" id="user-email" />
+        </div>
+        <!-- Phone -->
+        <label for="user-phone">Phone number</label>
+        <div class="rent-input-div">
+          <input type="text" id="user-phone" class="rent-input" />
+        </div>
+        <!-- comment -->
+        <label for="user-comment">Comment</label>
+        <div class="rent-comment">
+          <textarea
+            name="user-comment"
+            id="user-comment"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+      </form>
+      <button type="submit" class="rent-button">
+        Send
+        <svg>
+          <use href="../img/rent.img/symbol-defs.svg#arrow"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 </section>
 
-      <section class="reviews">
-  <div class="container">REVIEWS</div>
+      <section class="reviews" id="reviews">
+  <div class="container">
+    <ul class="list pre-reviews-list">
+     <li class="pre-reviews"> <h3 class="pre-reviews-main"> <span class="span-pre-reviews-text"> Yacht Adventures </span> 
+        take pride in providing the best possible service and experience to our customers</h3>
+        </li>
+        <li class="pre-reviews pre-paragraph">
+          <p class="pre-reviews-paragraph">Our customers have enjoyed unforgettable moments on our yachts. Don't just take our word for it - read on to find out what they have to say about their journey with us.</p>
+        </li>
+    </ul>
+    <ul class="list reviews-list">
+      <li class="review" id="review-1">
+        <img src="/project-july2023/assets/john-wax-b4003dbd.png" srcset="/project-july2023/assets/john-wax-b4003dbd.png 1x, /project-july2023/assets/john-wax@2x-2dedb7f9.png 2x" alt="customer-review" width="56" height="56" class="customer-image">
+        <p class="review-customer-name">John Wax</p>
+        <p class="customer-review">I rented the Lagoon 620 with my family for a week-long vacation and it was the best decision ever. The yacht was spacious, comfortable, and luxurious, and the crew took care of everything. </p>
+      </li>  
+      <li class="review" id="review-2">
+        <img src="/project-july2023/assets/victoria-r-afb84f23.png" srcset="/project-july2023/assets/victoria-r-afb84f23.png 1x, /project-july2023/assets/victoria-r@2x-a6365d81.png 2x" alt="customer-review" width="56" height="56" class="customer-image">
+        <p class="review-customer-name">Victoria Romashenko</p>
+        <p class="customer-review">The Sunseeker Manhattan 66 was the perfect choice for our romantic getaway. The yacht was beautifully designed, with all the amenities we needed, and the crew was attentive and friendly. </p>
+      </li>
+      <li class="review" id="review-3">
+          <img src="/project-july2023/assets/ihor-t-f13538dd.png" srcset="/project-july2023/assets/ihor-t-f13538dd.png 1x, /project-july2023/assets/ihor-t@2x-eb9fa280.png 2x" alt="customer-review" width="56" height="56" class="customer-image">
+          <p class="review-customer-name">Ihor Trachuk</p>
+          <p class="customer-review">The Azimut 80 was the most luxurious yacht I've ever been on. The cabins were spacious and elegant, and the outdoor areas were perfect for relaxing and entertaining. Worth every penny!</p>
+        </li>
+    </ul>
+  </div>
+
 </section>
 
     </main>
