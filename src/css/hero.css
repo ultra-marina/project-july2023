@@ -118,16 +118,22 @@
     min-height: 427px;
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero-image {
+        background-image:  url(../img/hero/background.png);
+    }
+}
+
+
+
 @media screen and (min-width: 768px) {
     .hero-image  {
         max-width: 426px;
-    }       
+    }      
 } 
 @media screen and (min-width: 1280px) {
     .hero-image  {
         display: flow;
-        
-
     }       
 } 
 
