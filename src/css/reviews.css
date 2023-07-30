@@ -105,10 +105,31 @@ margin-top: 8px;
         gap: 24px;
         margin-bottom: 40px;
     }
+    .pre-reviews-main,
+    .span-pre-reviews-text{
+        font-size: 24px;
+        letter-spacing: -1.08px;
+    }
+    .pre-reviews-paragraph{
+        font-size: 14px;
+        letter-spacing: -0.28px;
+    }
     #review-2, #review-3{
         display: none;
     }
     .review{
         padding: 24px;
+    }
+    .customer-image{
+        width: 48px;
+        height: 48px;
+    }
+    .review-customer-name{
+        font-size: 16px;
+        letter-spacing: -0.72px;
+    }
+    .customer-review{
+        font-size: 12px;
+        letter-spacing: -0.32px;
     }
 }
