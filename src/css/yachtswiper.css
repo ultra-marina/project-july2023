@@ -5,7 +5,7 @@
 
 .yachtswiper-item {
     padding: 18px;
-    background-color: #1F212D;
+    background-color: var(--blue-2);
     border-radius: 27px;
 }
 
@@ -29,9 +29,14 @@
     letter-spacing: -0.72px;
 }
 
+.yachtswiper-header {
+    font-size: 16px;
+    font-weight: 700;
+}
+
 .yachtswiper-header-class {
     font-size: 12px;
-    color: #F6F5EF;
+    color: var(--white);
     opacity: 0.5;
     letter-spacing: 0.36px;
     font-weight: 400;
@@ -62,16 +67,15 @@
 
 .ys-btn {
     border-radius: 60px;
-    border: 1px solid #F6F5EF;
-    background-color: #11131F;
+    border: 1px solid var(--white);
+    background-color: var(--dark-blue);
     margin-top: 24px;
-    margin-bottom: 80px;
     width: 46px;
     height: 36px;
 }
 
 .ys-icon {
-    fill: #F6F5EF
+    fill: var(--white)
 }
 
 @media only screen and (min-width: 768px) {
@@ -97,11 +101,20 @@
 
     .ys-btn {
         margin-top: 32px;
-        margin-bottom: 100px;
     }
 }
 
 @media only screen and (min-width: 1280px) {
+    .yachtswiper-list {
+        max-width: 1094px;
+        margin: 0 auto;
+        /* position: absolute; */
+    }
+
+    .ys-btn {
+        /* position: relative; */
+    }
+
     .yachtswiper-list {
         --items: 3;
     }
