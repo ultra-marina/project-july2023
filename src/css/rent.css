@@ -2,9 +2,7 @@
     min-width: 320px;
     max-width: 395px;
     flex-direction: column;
-   
 }
-
 
 .rent-title {
     color: var(--white);
@@ -22,10 +20,5 @@
 .rent-input {
     border-top: 0;
     border-right: 0;
-    border-left: 0;
-    
+    border-left: 0;   
 }
-
-
-}
-
