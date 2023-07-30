@@ -1,0 +1,317 @@
+.hero-section {
+    padding-top: 40px;
+    
+}
+@media screen and (min-width: 768px) {
+    .hero-section {
+        padding-top: 64px;
+        padding-bottom: 100px;
+    }
+}
+.hero-container {
+    max-width: 428px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 23px;
+    padding-left: 20px;
+}
+@media screen and (min-width: 768px) {
+    .hero-container {
+        max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hero-container {
+        max-width: 1280px;
+        
+    }
+}
+
+.hero-header {
+    font-family: DM Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; 
+    letter-spacing: -1.62px;
+    margin-bottom: 14px;
+    min-width: 332px;
+}
+@media screen and (min-width: 768px) {
+    .hero-header {
+        font-size: 60px;
+        letter-spacing: -2.7px;
+        min-width: 698px;
+        margin-bottom: 16px;
+    }
+}
+.hero-header-span {
+    background: var(--linear-green, linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: DM Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -1.62px;
+   
+}
+@media screen and (min-width: 768px) {
+    .hero-header-span {
+        font-style: italic;
+        font-size: 60px;
+        letter-spacing: -2.7px;
+    }
+}
+.hero-description {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+    letter-spacing: -0.28px;
+    margin-bottom: 24px;
+    min-width: 332px;
+    }
+@media screen and (min-width: 768px) {
+    .hero-description {
+        font-size: 16px;
+        letter-spacing: -0.32px;
+        width: 539px;
+        margin-bottom: 32px;
+    }
+}
+.hero-image {
+    background-image: url(../img/hero/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 24px;
+    border: 1px solid #000; 
+    position: relative; 
+    min-width: 363px;
+    
+}
+@media screen and (min-width: 768px) {
+    .hero-image  {
+        max-width: 426px;
+        
+        
+    }       
+} 
+
+
+.hero-button-li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 64px;
+}
+@media screen and (min-width: 768px) {
+    .hero-button-li {
+        gap: 10px;
+    }
+}
+
+.hero-button {
+    color: #F6F5EF;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; 
+    letter-spacing: -0.63px;
+    display: flex;
+    padding: 14px 28px;
+    align-items: flex-start;
+    gap: 10px;
+    background: var(--light-green, #93ABAE);
+    border-radius: 60px;
+    border: none;
+    cursor: pointer;
+    }
+@media screen and (min-width: 768px) {
+    .hero-button {
+        font-size: 18px;
+        letter-spacing: -0.81px;
+    }
+    }
+
+.hero-link {
+    color: var(--white, #F6F5EF);
+    background-color: var(--dark-blue);
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 15.4px */
+    letter-spacing: -0.63px;
+    border-radius: 60px;
+    border: 1px solid var(--white, #F6F5EF);
+    padding: 14px 28px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-link {
+        font-size: 18px;
+        letter-spacing: -0.81px;
+    }
+}
+
+
+.hero-button:hover,
+.hero-button:focus {
+    background: #88B3B9;
+}  
+.hero-link:hover,
+.hero-link:focus {
+    color: #93ABAE;
+    border: 1px solid #93ABAE;
+}  
+.pic-list {
+    display: flex;
+    margin-top: 24px;
+    margin-bottom: 13px;
+    margin-left: 24px;
+    position: relative;
+    
+}
+@media screen and (min-width: 768px) {
+    .pic-list {
+        margin-bottom: 11px;
+        margin-top: 32px;
+        margin-left: 32px;
+
+    }
+}
+.pic-li {
+    display: inline-block;
+    margin-right: -20px;
+}
+
+
+
+.pic-list-headshot {
+    border-radius: 56px;
+    border: 2px solid #93ABAE;
+    min-width: 48px;
+    position: relative;
+}
+.pic-li:nth-child(1) {
+    z-index: 3; 
+  }
+  .pic-li:nth-child(2) {
+    z-index: 2; 
+  }
+  
+  .pic-li:nth-child(3) {
+    z-index: 1; 
+  } 
+.hero-subheader {
+    color: #11131F;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 15.4px */
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+    margin-left: 24px;
+    margin-bottom: 52px;
+}
+@media screen and (min-width: 768px) {
+    .hero-subheader {
+        margin-bottom: 111px;
+        margin-left: 32px;
+
+    }
+}   
+.list-img-ceo {
+    position: absolute;
+    top: 35px;
+    left: 214px;
+    right: -12px;
+}
+@media screen and (min-width: 768px) {
+    .list-img-ceo {
+        top: 32px;
+        left: 339px;
+        right: -146px;
+    }
+}
+.img-ceo {
+    border-radius: 24px;
+}
+
+.list-img-yacht {
+   display: flex;
+   justify-content: center; 
+   
+}
+
+.img-yacht {
+    border: 1px solid #000;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.adv-rent {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin-top: 14px;
+    margin-left: 24px;
+}
+@media screen and (min-width: 768px) {
+    .adv-rent {
+        margin-top: 22px;
+        margin-left: 32px;
+        margin-bottom: 64px;
+
+    }
+}
+.rent-value {
+    display: flex;
+    min-width: 104px;
+    height: 46px;
+    flex-direction: column;
+    justify-content: center;
+    color: #11131F;
+    font-family: DM Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 52.8px */
+    letter-spacing: -2.16px;
+    text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+    .rent-value {
+        font-size: 60px;
+        letter-spacing: -2.7px;  
+    }
+}
+.adv-description {
+    color: #11131F;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: -0.63px;
+    min-width: 169px;
+    height: 39px;
+}
+@media screen and (min-width: 768px) {
+    .adv-description {
+        font-size: 18px;
+        letter-spacing: -0.81px;
+        max-width: 208px;
+        height: 36px;
+    } 
+}
