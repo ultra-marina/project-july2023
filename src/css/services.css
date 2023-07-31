@@ -28,6 +28,21 @@
     gap: 24px;
 }
 
+@media only screen and (max-width: 429px) {
+.services-2item {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+}
+
+@media only screen and (max-width: 429px) {
+.sunbating-item {
+    display: flex;
+    justify-content: center;
+}
+}
+
 @media only screen and (min-width: 429px) {
     .services-list {
         max-width: 100%;
@@ -41,19 +56,33 @@
         display: flex;
         justify-content: flex-start;
     }
+
+    .services-2item {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
 }
 
 @media only screen and (min-width: 769px) {
     .services-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width: 100%;
         gap: 64px;
     }
 
+    .services-2item {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 64px;
+        width: 100%;
+    }
+    
     .services-item {
         width: calc(100% - 64px);
+    }
+
+    .fishing-item {
+        justify-content: normal;
     }
 
     .sunbating-item {
@@ -147,12 +176,12 @@
     }
 }
 
-#circle {
+#services-circle {
     position: absolute;
     width: 323px;
     height: 323px;
-    top: 350px;
-    right: 235px;
+    top: 3519px;
+    right: 200px;
     transform: rotate(-44.916deg);
     border-radius: 323px;
     opacity: 0.6000000238418579;
@@ -161,23 +190,23 @@
 }
 
 @media only screen and (min-width: 429px) {
-    #circle {
+    #services-circle {
         width: 414px;
         height: 414px;
         transform: rotate(-44.094deg);
         border-radius: 414px;
-        top: 750px;
-        right: 550px;
+        top: 4331px;
+        right: 487px;
     }
 }
 
 @media only screen and (min-width: 769px) {
-    #circle {
+    #services-circle {
         width: 414px;
         height: 414px;
         transform: rotate(-45.074deg);
         border-radius: 414px;
-        top: 350px;
-        right: 790px;
+        top: 3280px;
+        right: 993px;
     }
 }
