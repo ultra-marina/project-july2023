@@ -1,0 +1,174 @@
+.footer {
+    margin-top: 164px;
+}
+
+.footer-flex::before {
+    content: '';
+    height: 1px;
+    background-color: rgba(246, 245, 239, 0.20);
+    position: absolute;
+    width: 335;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-flex::before {
+        width: 704px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .footer-flex::before {
+        width: 1216px;
+    }
+}
+
+.footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/**
+  |============================
+  | Логотип футера
+  |============================
+*/
+
+.footer-logo {
+    display: flex;
+    gap: 8px;
+    margin-right: 314px;
+    margin-top: 64px;
+    margin-bottom: 180px;
+}
+
+.footer-logo-img {
+    width: 23px;
+    height: 23px;
+}
+
+.footer-logo-link {
+    color: var(--white);
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-logo-link {
+        font-size: 18px;
+        line-height: 1.18;
+    }
+}
+
+/**
+  |============================
+  | Навігація футера
+  |============================
+*/
+
+.footer-nav {
+    margin-top: 64px;
+    margin-bottom: 186px;
+}
+
+.footer-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+    margin-right: 311px;
+}
+
+.footer-item {}
+
+.footer-link {
+    color: var(--white);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.8;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+
+/**
+  |============================
+  | Посилання футера
+  |============================
+*/
+
+.footer-social-networks {
+    margin-top: 64px;
+    margin-bottom: 132px;
+}
+
+.footer-sn-text {
+    margin-bottom: 16px;
+    color: var(--white);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.1;
+    
+}
+
+.footer-sn-list {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-sn-item {}
+
+.footer-sn-link {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-blue);
+    border: 1px solid var(--white);
+    border-radius: 6px;
+}
+
+.footer-sn-icon {
+    fill: var(--white);
+}
+
+
+/**
+  |============================
+  | Політика приватності футера
+  |============================
+*/
+
+
+.footer-pp {
+    display: flex;
+    gap: 32px;
+    margin: 0 auto;
+}
+
+.footer-pp-link {
+    color: rgba(246, 245, 239, 0.50);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.18;
+    letter-spacing: 0.42px;
+}
+
+.footer-pp-description {
+    color: rgba(246, 245, 239, 0.50);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.18;
+    letter-spacing: 0.42px;
+}
