@@ -176,7 +176,7 @@
     }
 }
 
-#circle {
+#services-circle {
     position: absolute;
     width: 323px;
     height: 323px;
@@ -190,7 +190,7 @@
 }
 
 @media only screen and (min-width: 429px) {
-    #circle {
+    #services-circle {
         width: 414px;
         height: 414px;
         transform: rotate(-44.094deg);
@@ -201,7 +201,7 @@
 }
 
 @media only screen and (min-width: 769px) {
-    #circle {
+    #services-circle {
         width: 414px;
         height: 414px;
         transform: rotate(-45.074deg);
