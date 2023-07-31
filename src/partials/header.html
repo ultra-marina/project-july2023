@@ -1,10 +1,11 @@
 <header class="header">
-    <div class="header container">
+    <div class="container">
         <nav class="header-nav">
             <!-- логотип -->
             <div class="header-logotype">
-            <img class="header-logo-img" src="../img/header/header-logo.svg" alt="">
-            <a class="header-logo-link link" href="../index.html">YACHT ADVENTURES</a>
+            <a class="header-logo-link link" href="../index.html">
+                <img class="header-logo-img" src="../img/header/header-logo.svg" alt="">YACHT ADVENTURES
+            </a>
             </div>
             <!-- мобільне меню -->
             <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
@@ -15,40 +16,36 @@
             <!-- навігація -->
             <ul class="header-list list">
                 <li class="header-item">
-                    <a class="header-link link" href="">ABOUT</a>
+                    <a class="header-link link" href="#about">ABOUT</a>
                 </li>
                 <li class="header-item">
-                    <a class="header-link link" href="">YACHTS</a>
+                    <a class="header-link link" href="#yachts">YACHTS</a>
                 </li>
                 <li class="header-item">
-                    <a class="header-link link" href="">REVIEWS</a>
+                    <a class="header-link link" href="#reviews">REVIEWS</a>
                 </li>
             </ul>
         </nav>
     </div>
 </header>
+
 <!-- мобільне меню -->
 
 <div class="menu-container js-menu-container" id="mobile-menu">
     <div class="header-logotype-menu">
-        <img class="header-logo-img" src="../img/logo-sail.svg" alt="">
-        <a class="header-logo-link link" href="../index.html">YACHT ADVENTURES</a>
-    </div>
+        <a class="header-logo-link link" href="../index.html">
+            <img class="header-logo-img" src="../img/header/header-logo-mob.svg" alt="">YACHT ADVENTURES</a>
     <button class="menu-toggle js-close-menu">
         <svg class="menu-toggle-icon-x" width="24" height="24">
             <use href="../img/header/header-icon.svg#header-x"></use>
         </svg>
     </button>
-
+    </div>
     <ul class="mobile-menu">
-        <li class="mobile-menu-item"><a href="" class="mobile-menu-link link">ABOUT</a></li>
-        <li class="mobile-menu-item"><a href="" class="mobile-menu-link link">YACHTS</a></li>
-        <li class="mobile-menu-item"><a href="" class="mobile-menu-link link">REVIEWS</a></li>
-        
-    </ul>
-
-    <!-- <img class="mobile-menu-ellipse" src="../img/header/Ellipse7273.png" width="279" height="279"> -->
-    <!-- <img class="mobile-menu-ellipse" src="../img/header/Ellipse7272.png" width="279" height="279"> -->
+        <li class="mobile-menu-item"><a href="#about" class="mobile-menu-link link">ABOUT</a></li>
+        <li class="mobile-menu-item"><a href="#yachts" class="mobile-menu-link link">YACHTS</a></li>
+        <li class="mobile-menu-item"><a href="#reviews" class="mobile-menu-link link">REVIEWS</a></li>
+    </ul> 
 </div>
 
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
