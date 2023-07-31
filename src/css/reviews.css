@@ -1,9 +1,9 @@
-
+.review-container{
+    padding: 32px 25px;
+}
 .pre-reviews-list{
     display: flex;
-align-items: flex-start;
 justify-content: space-between;
-gap: 446px;
 margin-bottom: 64px;
 }
 .pre-reviews-main{
@@ -14,7 +14,9 @@ font-style: normal;
 font-weight: 500;
 line-height: 120%;
 letter-spacing: -1.44px;  
+width: 497px;
 }
+
 .span-pre-reviews-text{
     color: var(--linear-green);
 font-family: 'DM Sans', sans-serif;
@@ -32,6 +34,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 140%; /* 22.4px */
 letter-spacing: -0.32px;
+width: 297px;
 }
 .reviews-list{
     display: flex;
@@ -74,7 +77,7 @@ margin-top: 8px;
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
 .pre-reviews-list{
-    gap: 0;
+    gap: 32px;
     flex-wrap: wrap;
     flex-direction: column;
     
@@ -84,8 +87,12 @@ margin-top: 8px;
     max-width: 497px;
     width: 100%;
 }
+.pre-reviews .pre-paragraph{
+    margin-left: auto;
+}
 .pre-reviews-list .pre-reviews-paragraph{
     max-width: 273px;
+    margin-left: auto;
 }
 
 #review-3{
@@ -102,10 +109,12 @@ margin-top: 8px;
     .span-pre-reviews-text{
         font-size: 24px;
         letter-spacing: -1.08px;
+        width: auto;
     }
     .pre-reviews-paragraph{
         font-size: 14px;
         letter-spacing: -0.28px;
+        width: auto;
     }
     #review-2, #review-3{
         display: none;
