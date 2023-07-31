@@ -1,7 +1,7 @@
 <section class="yachts section" id="yachts">
-  <div class="container">
-    <ul class="yachtswiper-list card-set">
-      <li class="yachtswiper-item card-set-item">
+  <div class="container swiper-container">
+    <ul class="yachtswiper-list card-set swiper-wrapper">
+      <li class="yachtswiper-item card-set-item swiper-slide" data-active-1>
         <a href="" class="yachtswiper-link">
           <img
             class="yachtswiper-img"
@@ -39,7 +39,7 @@
         </a>
       </li>
 
-      <li class="yachtswiper-item card-set-item">
+      <li class="yachtswiper-item card-set-item swiper-slide" data-active-2>
         <a href="" class="yachtswiper-link">
           <img
             class="yachtswiper-img"
@@ -77,7 +77,7 @@
         </a>
       </li>
 
-      <li class="yachtswiper-item card-set-item">
+      <li class="yachtswiper-item card-set-item swiper-slide" data-active-3>
         <a href="" class="yachtswiper-link">
           <img
             class="yachtswiper-img"
@@ -115,7 +115,7 @@
         </a>
       </li>
 
-      <li class="yachtswiper-item card-set-item">
+      <li class="yachtswiper-item card-set-item swiper-slide">
         <a href="" class="yachtswiper-link">
           <img
             class="yachtswiper-img"
@@ -153,7 +153,7 @@
         </a>
       </li>
 
-      <li class="yachtswiper-item card-set-item">
+      <li class="yachtswiper-item card-set-item swiper-slide">
         <a href="" class="yachtswiper-link">
           <img
             class="yachtswiper-img"
@@ -191,7 +191,7 @@
         </a>
       </li>
 
-      <li class="yachtswiper-item card-set-item">
+      <li class="yachtswiper-item card-set-item swiper-slide">
         <a href="" class="yachtswiper-link">
           <img
             class="yachtswiper-img"
@@ -229,7 +229,7 @@
         </a>
       </li>
 
-      <li class="yachtswiper-item card-set-item">
+      <li class="yachtswiper-item card-set-item swiper-slide">
         <a href="" class="yachtswiper-link">
           <img
             class="yachtswiper-img"
@@ -267,12 +267,15 @@
         </a>
       </li>
 
-      <li class="yachtswiper-item card-set-item">
+      <li class="yachtswiper-item card-set-item swiper-slide">
         <a href="" class="yachtswiper-link">
           <img
             class="yachtswiper-img"
-            srcset="../img/yachtswiper/yacht-8@1x.jpg"
-            src="../img/yachtswiper/yacht-8@2x.jpg"
+            srcset="
+              ../img/yachtswiper/yacht-8@1x.jpg,
+              ../img/yachtswiper/yacht-8@2x.jpg
+            "
+            src="../img/yachtswiper/yacht-8@1x.jpg"
             alt="Yacht image"
             width="299"
             height="251"
@@ -302,7 +305,7 @@
         </a>
       </li>
 
-      <li class="yachtswiper-item card-set-item">
+      <li class="yachtswiper-item card-set-item swiper-slide">
         <a href="" class="yachtswiper-link">
           <img
             class="yachtswiper-img"
@@ -340,16 +343,17 @@
         </a>
       </li>
     </ul>
+
     <ul class="ys-btn-list">
       <li>
-        <button class="ys-btn" type="button">
+        <button class="ys-btn swiper-button-prev" type="button">
           <svg class="ys-icon" width="18" height="8">
             <use href="../img/icons.svg#icon-arrow-left"></use>
           </svg>
         </button>
       </li>
       <li>
-        <button class="ys-btn" type="button">
+        <button class="ys-btn swiper-button-next" type="button">
           <svg class="ys-icon" width="18" height="8">
             <use href="../img/icons.svg#icon-arrow-right"></use>
           </svg>

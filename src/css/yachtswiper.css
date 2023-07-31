@@ -78,6 +78,16 @@
     fill: var(--white)
 }
 
+/* Temp */
+
+.swiper-slide {
+    display: none;
+}
+
+.swiper-slide[data-active-1] {
+    display: block;
+}
+
 @media only screen and (min-width: 768px) {
     .yachtswiper-list {
         --items: 2;
@@ -102,17 +112,32 @@
     .ys-btn {
         margin-top: 32px;
     }
+
+    /* Temp */
+
+    .swiper-slide[data-active-2] {
+        display: block;
+    }
 }
 
 @media only screen and (min-width: 1280px) {
     .yachtswiper-list {
         max-width: 1094px;
         margin: 0 auto;
-        /* position: absolute; */
     }
 
-    .ys-btn {
-        /* position: relative; */
+    .swiper-button-prev {
+
+        position: absolute;
+        top: 50%;
+        left: 32px;
+    }
+
+    .swiper-button-next {
+
+        position: absolute;
+        top: 50%;
+        right: 32px;
     }
 
     .yachtswiper-list {
@@ -121,5 +146,19 @@
 
     .yachtswiper-img {
         width: 322px;
+    }
+
+    .swiper-container {
+        position: relative;
+    }
+
+    /* Temp */
+
+    .swiper-slide[data-active-3] {
+        display: block;
+    }
+
+    .ys-btn {
+        margin-top: 0px;
     }
 }
