@@ -15,29 +15,7 @@
         
     }
 }
-/*
-.hero-container {
-    max-width: 428px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 23px;
-    padding-left: 20px;
-}
-@media screen and (min-width: 768px) {
-    .hero-container {
-        max-width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-}
 
-@media screen and (min-width: 1280px) {
-    .hero-container {
-        max-width: 1280px;
-        
-    }
-}
-*/
 @media screen and (min-width: 1280px) {
     .header-section {
         display: flex;
@@ -113,11 +91,6 @@
     min-height: 427px;
 }
 
-/*@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .hero-image {
-        background-image: 
-    }
-}*/
 .hero-background {
     position: absolute;
 }
@@ -140,6 +113,7 @@
     align-items: center;
     gap: 8px;
     margin-bottom: 64px;
+    
 }
 @media screen and (min-width: 768px) {
     .hero-button-li {
@@ -163,6 +137,7 @@
     border: none;
     cursor: pointer;
     }
+
 @media screen and (min-width: 768px) {
     .hero-button {
         font-size: 18px;
@@ -191,7 +166,6 @@
     }
 }
 
-
 .hero-button:hover,
 .hero-button:focus {
     background: var(--hover-light-green);
@@ -201,6 +175,8 @@
     color: var(--light-green);
     border: 1px solid var(--light-green);
 }  
+
+
 .pic-list {
     display: flex;
     position: relative;
@@ -210,7 +186,6 @@
 @media screen and (min-width: 768px) {
     .pic-list {
         margin-bottom: 11px;
-        
 
     }
 }
@@ -378,6 +353,38 @@
         height: 36px;
     } 
 }
+.hero-blur {
+    width: 279px;
+    height: 279px;
+    transform: rotate(-44.916deg);
+    flex-shrink: 0;
+    border-radius: 279px;
+    opacity: 0.8999999761581421;
+    background: #939CAC;
+    filter: blur(100px);
+    position: absolute;
+    bottom: 112px;
+    right: 183px;
+    z-index: 0;
+    }
+@media screen and (min-width: 768px) {
+    .hero-blur {
+        width: 414px;
+        height: 414px;
+        border-radius: 414px;
+        bottom: 68px;
+        right: 510px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .hero-blur {
+        transform: rotate(-45.074deg);
+        border-radius: 414px;
+        opacity: 0.8999999761581421;
+        top: 50%;
+        right: 70%;
+    }
+}
 .blur::after {
         content: '';
         position: absolute;
@@ -398,7 +405,7 @@
         opacity: 0.6;
       }
 .blur::after {
-    top: 90%;
+    top: 60%;
     left: -5%;
     width: 316px;
     height: 316px;
