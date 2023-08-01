@@ -127,7 +127,7 @@
 }
 
 @media only screen and (min-width: 429px) {
-    .diving {
+    .diving {        
         width: 704px;
         align-items: center;
     }
