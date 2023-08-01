@@ -1,0 +1,377 @@
+
+
+/* .footer {
+    margin-top: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .footer {
+        margin-top: 164px;
+    }
+} */
+
+.footer-flex::before {
+    content: '';
+    height: 1px;
+    background-color: rgba(246, 245, 239, 0.20);
+    position: absolute;
+    width: 335px;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-flex::before {
+        width: 704px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .footer-flex::before {
+        width: 1216px;
+    }
+}
+
+.footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-flex {
+        flex-direction: row;
+    }
+}
+
+
+/**
+  |============================
+  | Логотип футера
+  |============================
+*/
+
+.footer-logo {
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+    margin: 40px 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-logo {
+        margin-right: 128px;
+        margin-top: 64px;
+        align-items: flex-start;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .footer-logo {
+        margin-right: 314px;
+        margin-bottom: 180px;
+    }
+}
+
+.footer-logo-img {
+    width: 18px;
+    height: 18px;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-logo-img {
+        width: 23px;
+        height: 23px;
+    }
+}
+
+
+.footer-logo-link {
+    color: var(--white);
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-logo-link {
+        font-size: 18px;
+        line-height: 1.18;
+    }
+}
+
+/**
+  |============================
+  | Навігація футера
+  |============================
+*/
+
+.footer-nav {
+    
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-nav {
+        margin-top: 64px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .footer-nav {
+        margin-bottom: 186px;
+    }
+}
+
+.footer-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .footer-list {
+        align-items: center;
+        margin-right: 139px;
+        gap: 24px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .footer-list {
+        margin-right: 311px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
+
+.footer-item {}
+
+.footer-link {
+    color: var(--white);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.8;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+
+/**
+  |============================
+  | Посилання футера
+  |============================
+*/
+
+.footer-social-networks {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-social-networks {
+        margin-top: 64px;
+        margin-bottom: 132px;
+    }
+}
+
+
+.footer-sn-text {
+    margin-bottom: 16px;
+    color: var(--white);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.1;
+    
+}
+
+.footer-sn-list {
+    display: flex;
+    gap: 16px;
+}
+
+
+.footer-sn-link {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-blue);
+    border: 1px solid var(--white);
+    border-radius: 6px;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-sn-link {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+.footer-sn-icon {
+    fill: var(--white);
+}
+
+.footer-sn-link:hover,
+.footer-sn-link:focus {
+    color: rgba(190, 199, 194, 1);
+    border-color: rgba(190, 199, 194, 1);
+}
+
+.footer-sn-link:hover .footer-sn-icon {
+    fill: rgba(190, 199, 194, 1);
+}
+
+
+/**
+  |============================
+  | Політика приватності футера
+  |============================
+*/
+
+
+.footer-pp {
+    display: flex;
+    gap: 14px;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-pp {
+        gap: 32px;
+    } 
+}
+
+/* 
+.footer-pp::before {
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-pp::before {}
+}
+
+@media only screen and (min-width: 1280px) {
+    .footer-pp::before {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 420px;
+        height: 420px;
+        transform: rotate(-45.408deg);
+        flex-shrink: 0;
+        border-radius: 415px;
+        opacity: 0.6;
+        background-color: var(--light-green);
+        filter: blur(100px);
+        top: 900px;
+        left: 290px;
+        z-index: 0;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .footer-pp::after {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 317px;
+        height: 317px;
+        transform: rotate(-45.044deg);
+        flex-shrink: 0;
+        border-radius: 317px;
+        opacity: 0.3;
+        background-color: #A6A9B2;
+        filter: blur(100px);
+        top: 950px;
+        left: 780px;
+        z-index: 0;
+    }
+} */
+    
+
+
+.footer-pp-link {
+    color: rgba(246, 245, 239, 0.50);
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.18;
+    letter-spacing: 0.36px;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-pp-link {
+        font-size: 14px;
+        letter-spacing: 0.42px;
+    }
+}
+
+.footer-pp-description {
+    color: rgba(246, 245, 239, 0.50);
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.18;
+    letter-spacing: 0.36px;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-pp-description {
+        font-size: 14px;
+        letter-spacing: 0.42px;
+    }
+}
+
+.footer-facebook {
+    width: 8px;
+    height: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-facebook {
+        width: 10px;
+        height: 20px;
+    }
+}
+
+.footer-instagram {
+    width: 15px;
+    height: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-instagram {
+        width: 19px;
+        height: 19px;
+    }
+}
+
+.footer-youtube {
+    width: 15px;
+    height: 11px;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-youtube {
+        width: 19px;
+        height: 14px;
+    }
+}
+
