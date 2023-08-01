@@ -1,4 +1,6 @@
-.footer {
+
+
+/* .footer {
     margin-top: 80px;
 }
 
@@ -12,7 +14,7 @@
     .footer {
         margin-top: 164px;
     }
-}
+} */
 
 .footer-flex::before {
     content: '';
@@ -217,6 +219,16 @@
     fill: var(--white);
 }
 
+.footer-sn-link:hover,
+.footer-sn-link:focus {
+    color: rgba(190, 199, 194, 1);
+    border-color: rgba(190, 199, 194, 1);
+}
+
+.footer-sn-link:hover .footer-sn-icon {
+    fill: rgba(190, 199, 194, 1);
+}
+
 
 /**
   |============================
@@ -237,68 +249,53 @@
     } 
 }
 
-/* .mobile-menu::before {
-    display: block;
-    position: absolute;
-    content: "";
-    width: 279px;
-    height: 279px;
-    transform: rotate(-44.916deg);
-    flex-shrink: 0;
-    border-radius: 279px;
-    opacity: 0.6;
-    background: #91AFBA;
-    filter: blur(100px);
-    top: 474px;
-    right: 187px;
-    z-index: 0;
+/* 
+.footer-pp::before {
 }
-
-.mobile-menu::after {
-    display: block;
-    position: absolute;
-    content: "";
-    width: 279px;
-    height: 279px;
-    transform: rotate(-44.916deg);
-    flex-shrink: 0;
-    border-radius: 279px;
-    opacity: 0.9;
-    background: #939CAC;
-    filter: blur(100px);
-    top: 614px;
-    left: 53px;
-    z-index: 0;
-} */
-
-/* .footer-pp::before {
-    display: block;
-    position: absolute;
-    content: '';
-    width: 420px;
-    height: 420px;
-    transform: rotate(-45.408deg);
-    flex-shrink: 0;
-    border-radius: 420px;
-    opacity: 0.6;
-    background: var(--light-green);
-    filter: blur(100px);
-    top: 5833px;
-}
-
-.footer-pp::after {}
 
 @media only screen and (min-width: 768px) {
     .footer-pp::before {}
-    
-    .footer-pp::after {}
 }
 
 @media only screen and (min-width: 1280px) {
-    .footer-pp::before {}
+    .footer-pp::before {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 420px;
+        height: 420px;
+        transform: rotate(-45.408deg);
+        flex-shrink: 0;
+        border-radius: 415px;
+        opacity: 0.6;
+        background-color: var(--light-green);
+        filter: blur(100px);
+        top: 900px;
+        left: 290px;
+        z-index: 0;
+    }
+}
 
-    .footer-pp::after {}
+@media only screen and (min-width: 1280px) {
+    .footer-pp::after {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 317px;
+        height: 317px;
+        transform: rotate(-45.044deg);
+        flex-shrink: 0;
+        border-radius: 317px;
+        opacity: 0.3;
+        background-color: #A6A9B2;
+        filter: blur(100px);
+        top: 950px;
+        left: 780px;
+        z-index: 0;
+    }
 } */
+    
+
 
 .footer-pp-link {
     color: rgba(246, 245, 239, 0.50);
