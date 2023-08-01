@@ -133,6 +133,7 @@
   }
 }
 
+
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
   .rent-img {
     width: 271px;
@@ -146,3 +147,115 @@
     height: 191px;
   }
 }
+
+
+
+
+/* Modal-rent-window */
+.rent-modal {
+  border-radius: 20px;
+  background: var(--blue-2);
+  padding: 40px 24px;
+  max-width: 335px;
+  position: relative;
+  
+}
+.backdrop {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%) scale(1); 
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .rent-modal {
+    max-width: 570px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 97px;
+    padding-bottom: 64px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .rent-img-modal {
+    margin: 0 auto;
+    width: 338px;
+    height: 198px;
+  }
+}
+
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+
+.rent-modal-button {
+  border: none;
+  background-color: var(--blue-2);
+  margin-bottom: 6px;
+  position: absolute;
+  right: 14px;
+  top: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+  .rent-modal-button {
+    right: 32px;
+    top: 32px;
+  }
+}
+
+
+.rent-modal-title {
+  color: var(--white);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -1.08px;
+  margin-bottom: 14px;
+  margin-top: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .rent-modal-title {
+    color: var(--white);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -1.44px;
+    margin-bottom: 16px;
+    margin-top: 21px;
+    padding-left: 64px;
+  
+  }
+}
+
+.rent-modal-page {
+  color: var(--white);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.28px;
+  width: 287px;
+}
+@media only screen and (min-width: 768px) {
+  .rent-modal-page {
+    color: var(--white);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.32px;
+    width: 442px;
+    margin: 0 auto;
+  }
+}
+
+
