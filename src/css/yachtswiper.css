@@ -1,3 +1,116 @@
+/**
+  |============================
+  | Yachts styles
+  |============================
+*/
+
+/* Yachts Header styles*/
+
+.yachts-header-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.yachts-header {
+    color: var(--white);
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -0.045em;
+    width: 310px;
+}
+
+.yachts-btn {
+    width: fit-content;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 14px 28px;
+    border-radius: 60px;
+    border: 1px solid var(--white);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.045em;
+}
+
+.yacht-blur::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background: #91AFBA;
+    filter: blur(100px);
+    z-index: 5;
+}
+
+.yacht-blur::before {
+    top: -30%;
+    left: 0;
+    width: 414px;
+    height: 414px;
+    opacity: 0.6;
+}
+
+.yacht-blur::after {
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    width: 255px;
+    height: 255px;
+    transform: translateX(-30%) translateY(-20%) rotate(-44.916deg);
+    flex-shrink: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .yachts-header-container {
+        margin-bottom: 36px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 64px;
+        max-width: 641px;
+    }
+
+    .yachts-header {
+        font-size: 70px;
+        width: 100%;
+        letter-spacing: 0.02em;
+    }
+
+    .yachts-btn {
+        font-size: 18px;
+    }
+
+    .yacht-blur::after {
+        width: 399px;
+        height: 399px;
+        transform: translateX(-15%) translateY(-30%) rotate(-44.094deg);
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .yachts-header-container {
+        margin-bottom: 100px;
+        max-width: 882px;
+
+    }
+
+    .yachts-header {
+        font-size: 100px;
+        letter-spacing: 0.02em;
+    }
+
+    .yacht-blur::after {
+        width: 414px;
+        height: 414px;
+        transform: translateX(15%) translateY(-20%) rotate(-45.074deg);
+    }
+}
+
+/* Yachts Swiper styles*/
+
 .yachtswiper-list {
     --indent: 16px;
     --items: 1;
@@ -130,14 +243,14 @@
 
         position: absolute;
         top: 50%;
-        left: 32px;
+        left: 0px;
     }
 
     .swiper-button-next {
 
         position: absolute;
         top: 50%;
-        right: 32px;
+        right: 0px;
     }
 
     .yachtswiper-list {
