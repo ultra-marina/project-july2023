@@ -18,8 +18,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/project-july2023/assets/index-bd8b64f1.js"></script>
-    <link rel="stylesheet" href="/project-july2023/assets/index-51c07818.css">
+    <script type="module" crossorigin src="/project-july2023/assets/index-7f38c08d.js"></script>
+    <link rel="stylesheet" href="/project-july2023/assets/index-f18ee5f1.css">
   </head>
   <!--Content-->
   <body>
@@ -681,10 +681,14 @@
   <div class="container rent-container">
     <div class="rent-container-div">
       <h2 class="rent-title">Rent a yacht now</h2>
-      <img class="rent-img" 
-      srcset="../img/rent/imgmob1x.png 1x, ../img/rent/imgmob2x.png 2x"
-      src="../img/rent.img/imgyaht1.jpg" alt="yacht-rent" width="259px" height="187px" />
-      
+      <img
+        class="rent-img"
+        srcset="/project-july2023/assets/imgmob1x-91db7d33.png 1x, /project-july2023/assets/imgmob2x-1733fec3.png 2x"
+        src="./img/rent.img/imgyaht1.jpg"
+        alt="yacht-rent"
+        width="259px"
+        height="187px"
+      />
     </div>
     <div class="rent-container-form">
       <form class="rent-form">
@@ -715,15 +719,34 @@
           ></textarea>
         </div>
       </form>
-      <button type="submit" class="rent-button">
+      <button type="button" class="rent-button" data-modal-open >
         Send
         <svg width="18px" height="8.66px">
-          <use href="../img/icons.svg#rent-arrow"></use>
+          <use href="/project-july2023/assets/icons-68c8837f.svg#rent-arrow"></use>
         </svg>
       </button>
     </div>
   </div>
 </section>
+<!-- Modal-rent-window -->
+<div class="rent-modal backdrop is-hidden" data-modal>
+  <button type="button" class="rent-modal-button" data-modal-close >
+    <svg width="20px" height="20px">
+      <use href="../img/icons.svg#close-x"></use>
+    </svg>
+  </button>
+  <img 
+  srcset="/project-july2023/assets/modalmob1x-5c0e6adf.png 1x, /project-july2023/assets/modalmob2x-ccbba3cf.png 2x"
+  src="/project-july2023/assets/modalmob1x-5c0e6adf.png" alt="rent-yacht-modal" width="287" height="149" class="rent-img-modal">
+  <h2 class="rent-modal-title">Thank you</h2>
+  <p class="rent-modal-page">
+    Thank you for choosing Yacht Adventures, your booking details have been
+    received and our team will be in touch shortly to confirm your reservation
+    and provide any additional information or assistance you may need.
+  </p>
+
+</div>
+
 
       <section class="reviews" id="reviews">
   <div class="container review-container">
@@ -785,21 +808,21 @@
         <li class="footer-sn-item">
           <a class="footer-sn-link link" href="" target="_blank">
             <svg class="footer-sn-icon footer-facebook">
-              <use href="/project-july2023/assets/icons-ca871473.svg#footer-facebook"></use>
+              <use href="/project-july2023/assets/icons-68c8837f.svg#footer-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="footer-sn-item">
           <a class="footer-sn-link link" href="" target="_blank">
             <svg class="footer-sn-icon footer-instagram">
-              <use href="/project-july2023/assets/icons-ca871473.svg#footer-instagram"></use>
+              <use href="/project-july2023/assets/icons-68c8837f.svg#footer-instagram"></use>
             </svg>
           </a>
         </li>
         <li class="footer-sn-item">
           <a class="footer-sn-link link" href="" target="_blank">
             <svg class="footer-sn-icon footer-youtube">
-              <use href="/project-july2023/assets/icons-ca871473.svg#footer-youtube"></use>
+              <use href="/project-july2023/assets/icons-68c8837f.svg#footer-youtube"></use>
             </svg>
           </a>
         </li>
@@ -815,5 +838,6 @@
 </footer>
 
     
+    <script src="./js/rent-modal.js" ></script>
   </body>
 </html>
