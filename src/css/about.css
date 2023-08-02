@@ -1,3 +1,4 @@
+/* Text */
 .about-text-container {
   display: flex;
   flex-direction: column;
@@ -18,6 +19,7 @@
   max-width: 335px;
   margin-bottom: 40px;
 }
+/* Tablet */
 @media only screen and (min-width: 768px) {
   .about-task-text {
     max-width: 460px;
@@ -25,6 +27,7 @@
     letter-spacing: -1.44px;
   }
 }
+/* Desktop */
 @media only screen and (min-width: 1280px) {
   .about-task-text {
     margin-right: 302px;
@@ -51,6 +54,17 @@
     letter-spacing: -1.44px;
   }
 }
+.about-desc-list {
+  display: flex;
+  margin-bottom: 40px;
+  gap: 14px;
+}
+@media only screen and (min-width: 768px) {
+  .about-desc-list {
+    gap: 32px;
+    justify-content: right;
+  }
+}
 .about-desc-item {
   color: var(--white);
   font-family: DM Sans;
@@ -73,52 +87,54 @@
     font-size: 16px;
   }
 }
-.about-desc-list {
-  display: flex;
-  margin-bottom: 40px;
-  gap: 14px;
+/* Yachts Images */
+.yachts-list {
+  position: relative;
 }
-@media only screen and (min-width: 768px) {
-  .about-desc-list {
-    gap: 32px;
-    justify-content: right;
-  }
-}
+/* Mobile */
 .yachts-list li:not(:last-child) {
   margin-bottom: 24px;
 }
-
+/* Tablet */
 @media only screen and (min-width: 768px) {
   .yachts-list li:not(:last-child) {
     margin-bottom: 32px;
   }
 }
+/* First Pic */
 @media only screen and (min-width: 768px) {
   .yacht-list-first-pic {
-    max-width: 533px;
+    max-width: 704px;
     margin: 0 auto;
   }
 }
-.yachts-list {
-}
-.yacht-list-last-pic {
-  position: absolute;
-  margin-left: 75px;
-}
-@media only screen and (min-width: 768px) {
-  .yacht-list-last-pic {
-    margin-left: 352px;
-    margin-top: -120px;
-  }
-}
 @media only screen and (min-width: 1280px) {
-  .yacht-list-last-pic {
-    margin-top: 0px;
+  .yacht-list-first-pic {
+    max-width: 553px;
   }
 }
+/* Second Pic */
 @media only screen and (min-width: 1280px) {
   .yacht-list-second-pic {
     position: absolute;
-    margin-top: -250px;
+    top: 275px;
+  }
+}
+/* Last Pic */
+.yacht-list-last-pic {
+  position: absolute;
+  left: 75px;
+}
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .yacht-list-last-pic {
+    left: 342px;
+    top: 862px;
+  }
+}
+/* Desktop */
+@media only screen and (min-width: 1280px) {
+  .yacht-list-last-pic {
+    top: 527px;
   }
 }
