@@ -1,114 +1,98 @@
 <section class="about">
   <div class="container about-container">
-    <p class="about-task-text">
-      <span class="yacht-adventures">Yacht Adventures</span> fleet is here to
-      take you on the ultimate adventure. Each yacht is hand-picked for its
-      comfort, style, and performance.
-    </p>
-    <ul class="about-desc-list list">
-      <li class="about-desc-item">
-        From spacious decks to state-of-the-art technology, our yachts are
-        designed to provide the perfect blend of luxury and functionality. Take
-        a look at our selection below and choose the yacht that matches your
-        needs and preferences.
-      </li>
-      <li class="about-desc-item">
-        No matter which yacht you choose, our experienced crew will ensure that
-        your journey is smooth and enjoyable. Book now and get ready for an
-        unforgettable adventure on the high seas.
-      </li>
-    </ul>
-    <!-- <h2 class="yachts-title">
-      Choose your dream yacht and sail away into the sunset
-    </h2> -->
+    <!-- Text -->
+    <div class="about-text-container">
+      <p class="about-task-text">
+        <span class="yacht-adventures">Yacht Adventures</span> fleet is here to
+        take you on the ultimate adventure. Each yacht is hand-picked for its
+        comfort, style, and performance.
+      </p>
+      <ul class="about-desc-list list">
+        <li class="about-desc-item">
+          From spacious decks to state-of-the-art technology, our yachts are
+          designed to provide the perfect blend of luxury and functionality.
+          Take a look at our selection below and choose the yacht that matches
+          your needs and preferences.
+        </li>
+        <li class="about-desc-item">
+          No matter which yacht you choose, our experienced crew will ensure
+          that your journey is smooth and enjoyable. Book now and get ready for
+          an unforgettable adventure on the high seas.
+        </li>
+      </ul>
+    </div>
+    <!-- Images -->
     <ul class="yachts-list">
-      <li class="yachts-list-item yachts-list-first-item">
-        <img
-          srcset="../img/yachts/yaсht-1.png 1x, ../img/yachts/yacht-1-2x.png"
-          class="yacht-list-phone"
-          src="../img/yachts/yaсht-1.png"
-          alt="yacht top floor"
-        />
-        <img
-          srcset="
-            ../img/yachts/yacht-1(1).png    1x,
-            ../img/yachts/yacht-1(1)-2x.png 2x
-          "
-          class="yacht-list-tablet"
-          src="../img/yachts/yacht-1(1).png"
-          alt="yacht top floor"
-        />
-        <img
-          srcset="
-            ../img/yachts/yacht-1(2).png    1x,
-            ../img/yachts/yacht-1(2)-2x.png 2x
-          "
-          class="yacht-list-desktop"
-          src="../img/yachts/yacht-1(2).png"
-          alt="yacht top floor"
-        />
+      <li class="yacht-list-first-pic">
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="./img/yachts/yaсht-1.png 1x, ./img/yachts/yacht-1-2x.png 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/yachts/yacht-1(1).png    1x,
+              ./img/yachts/yacht-1(1)-2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/yachts/yacht-1(2).png    1x,
+              ./img/yachts/yacht-1(2)-2x.png 2x
+            "
+          />
+
+          <img src="./img/yachts/yaсht-1.png" alt="yacht top floor" />
+        </picture>
       </li>
-      <span class="yacht-under-list">
-        <li class="yachts-list-item yachts-list-second-item">
-          <img
-            srcset="
-              ../img/yachts/yaсht-2.png    1x,
-              ../img/yachts/yacht-2-2x.png 2x
-            "
-            class="yacht-list-phone"
-            src="../img/yachts/yaсht-2.png"
-            alt="yacht middle floor"
+      <li class="yacht-list-second-pic">
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="./img/yachts/yaсht-2.png 1x, ./img/yachts/yacht-2-2x.png 2x"
           />
-          <img
+          <source
+            media="(min-width: 768px)"
             srcset="
-              ../img/yachts/yacht-2(1).png    1x,
-              ../img/yachts/yacht-2(1)-2x.png 2x
+              ./img/yachts/yacht-2(1).png    1x,
+              ./img/yachts/yacht-2(1)-2x.png 2x
             "
-            class="yacht-list-tablet"
-            src="../img/yachts/yacht-2(1).png"
-            alt="yacht middle floor"
           />
-          <img
+          <source
+            media="(min-width: 1280px)"
             srcset="
-              ../img/yachts/yacht-2(2).png    1x,
-              ../img/yachts/yacht-2(2)-2x.png 2x
+              ./img/yachts/yacht-2(2).png    1x,
+              ./img/yachts/yacht-2(2)-2x.png 2x
             "
-            class="yacht-list-desktop"
-            src="../img/yachts/yacht-2(2).png"
-            alt="yacht middle floor"
           />
-        </li>
-        <li class="yachts-list-last-item">
-          <img
+          <img src="./img/yachts/yaсht-2.png" alt="yacht middle floor" />
+        </picture>
+      </li>
+      <li class="yacht-list-last-pic">
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="./img/yachts/yaсht-3.png 1x, ./img/yachts/yacht-3-2x.png 2x"
+          />
+          <source
+            media="(min-width: 768px)"
             srcset="
-              ../img/yachts/yaсht-3.png    1x,
-              ../img/yachts/yacht-3-2x.png 2x
+              ./img/yachts/yacht-3(1).png    1x,
+              ./img/yachts/yacht-3(1)-2x.png 2x
             "
-            class="yacht-list-phone"
-            src="../img/yachts/yaсht-3.png"
-            alt="yacht from the sky"
           />
-          <img
+          <source
+            media="(min-width: 1280px)"
             srcset="
-              ../img/yachts/yacht-3(1).png    1x,
-              ../img/yachts/yacht-3(1)-2x.png 2x
+              ./img/yachts/yacht-3(2).png    1x,
+              ./img/yachts/yacht-3(2)-2x.png 2x
             "
-            class="yacht-list-tablet"
-            src="../img/yachts/yacht-3(1)-2x.png"
-            src="../img/yachts/yacht-3(1).png"
-            alt="yacht from the sky"
           />
-          <img
-            srcset="
-              ../img/yachts/yacht-3(2).png    1x,
-              ../img/yachts/yacht-3(2)-2x.png 2x
-            "
-            class="yacht-list-desktop"
-            src="../img/yachts/yacht-3(2).png"
-            alt="yacht from the sky"
-          />
-        </li>
-      </span>
+          <img src="./img/yachts/yaсht-3.png" alt="yacht from the sky" />
+        </picture>
+      </li>
     </ul>
   </div>
 </section>
