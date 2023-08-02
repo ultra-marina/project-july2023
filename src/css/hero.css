@@ -357,6 +357,8 @@
         height: 36px;
     } 
 }
+@media screen and (min-width: 1280px) {
+
 
 .hero-blur::after {
     content: '';
@@ -387,7 +389,7 @@
     height: 414px;
 
 }
-
+}
 
 .blur::after {
         content: '';
