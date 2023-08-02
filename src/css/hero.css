@@ -107,11 +107,7 @@
 .hero-background {
     position: absolute;
 }
-@media screen and (min-width: 768px) {
-    .background-img {
-        
-    }
-}
+
 
 /*@media screen and (min-width: 1280px) {
     .hero-image  {
@@ -361,38 +357,38 @@
         height: 36px;
     } 
 }
-/*.hero-blur {
-    width: 279px;
-    height: 279px;
-    transform: rotate(-44.916deg);
-    flex-shrink: 0;
+
+.hero-blur::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
     border-radius: 279px;
-    opacity: 0.8999999761581421;
     background: #939CAC;
     filter: blur(100px);
-    position: absolute;
-    bottom: 112px;
-    right: 183px;
-    z-index: 0;
-    }
-@media screen and (min-width: 768px) {
-    .hero-blur {
-        width: 414px;
-        height: 414px;
-        border-radius: 414px;
-        bottom: 68px;
-        right: 510px;
-    }
+    z-index: -1;
 }
-@media screen and (min-width: 1280px) {
-    .hero-blur {
-        transform: rotate(-45.074deg);
-        border-radius: 414px;
-        opacity: 0.8999999761581421;
-        top: 50%;
-        right: 70%;
-    }
-}*/
+
+.hero-blur::before {
+    width: 414px;
+    height: 414px;
+    opacity: 0.8999999761581421;
+    top: 50%;
+    left: 0;
+}
+
+.hero-blur::after {
+    transform: rotate(-45.074deg);
+    top: 221px;
+    border-radius: 414px;
+    width: 414px;
+    height: 414px;
+
+}
+
+
 .blur::after {
         content: '';
         position: absolute;
@@ -403,7 +399,7 @@
         border-radius: 50%;
         background: #91AFBA;
         filter: blur(100px);
-        z-index: 5;
+        z-index: -1;
       }
 .blur::before {
         top: -30%;
