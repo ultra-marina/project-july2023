@@ -91,7 +91,7 @@
     position: relative; 
     min-height: 427px;
     max-width: 363px;
-    background-image: url(../img/hero/background.png);
+    background-image: url(./img/hero/background.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -100,7 +100,7 @@
     .hero-image {
         max-width: 426px;
         min-height: 598px;
-        background-image: url(../img/hero/background_tab.png);
+        background-image: url(./img/hero/background_tab.png);
     }
 }
 
