@@ -1,29 +1,17 @@
 .hero-section {
     padding-top: 40px;
-    
-    
 }
 @media screen and (min-width: 768px) {
     .hero-section {
         padding-top: 64px;
-        
     }
 }
-@media screen and (min-width: 1280px) {
-    .hero-section {
-        padding-top: 132px;
-        
-    }
-}
-
 @media screen and (min-width: 1280px) {
     .header-section {
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
-        align-content: flex-end;
         float: right;
-
+        margin-top: 68px;
     }
 }
 
@@ -69,7 +57,6 @@
     }
 }
 .hero-description {
-
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -90,31 +77,21 @@
     display: flex;
     position: relative; 
     min-height: 427px;
-    max-width: 363px;
-    background-image: url(./img/hero/background.png);
+    max-width: 335px;
+    background-image: url(../img/hero/background.png);
     background-repeat: no-repeat;
     background-size: cover;
+    flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
     .hero-image {
         max-width: 426px;
         min-height: 598px;
-        background-image: url(./img/hero/background_tab.png);
+        background-image: url(../img/hero/background_tab.png);
     }
 }
 
-.hero-background {
-    position: absolute;
-}
-
-
-/*@media screen and (min-width: 1280px) {
-    .hero-image  {
-        display: flow;
-    }       
-} 
-*/
 
 .hero-button-li {
     display: flex;
@@ -151,7 +128,6 @@
         letter-spacing: -0.81px;
     }
     }
-
 .hero-link {
     color: var(--white);
     background-color: var(--dark-blue);
@@ -184,41 +160,31 @@
 }  
 
 .hero-div {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 13px;
+    gap: 11px;
     padding-top: 24px;
     padding-left: 24px;
-    max-height: 76px;
+    margin-bottom: 52px;
     }
-
-
 @media screen and (min-width: 768px) {
     .hero-div {
-         gap: 11px;
-
+        padding-left: 32px;
+        margin-bottom: 111px;
     }
+}
+.pic-list {
+    display: flex;
 }
 .pic-li {
-    display: inline-block;
-    margin-right: -20px;
-    position: relative;
     
-}
-@media screen and (min-width: 768px) {
-    .pic-li {
-        left: 32px;
-    }
+    margin-right: -20px;
+   
 }
 
 .pic-list-headshot {
     border-radius: 56px;
-    /*border: 2px solid var(--light-green);*/
-    min-width: 48px;
-    position: relative;
-    
-    
 }
 .pic-li:nth-child(1) {
     z-index: 3; 
@@ -231,25 +197,15 @@
     z-index: 1; 
   } 
 .hero-subheader {
-    
-    color: #11131F;
+    color: var(--dark-blue);
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 110%; /* 15.4px */
     letter-spacing: 0.56px;
     text-transform: uppercase;
-    margin-bottom: 52px;
-    
-    
 }
-@media screen and (min-width: 768px) {
-    .hero-subheader {
-        
-        margin-left: 32px;
-
-    }
-}   
+ 
 .list-img-ceo {
     position: absolute;
     top: 35px;
@@ -263,8 +219,6 @@
 }
 @media screen and (min-width: 1280px) {
     .list-img-ceo {
-        max-width: 233px;
-        left: 305px;
         right: -112px;
     }
 }
@@ -277,53 +231,35 @@
     }
 }
 .list-img-yacht {
-   display: flex;
-   justify-content: center; 
-   left: 24px;
-   right: 24px;
-   margin-top: 152px;
-   position: absolute;
-}
-@media screen and (min-width: 768px) {
-    .list-img-yacht {
-        margin-top: 225px;
-    }
+    margin-left: 24px;
 }
 
 @media screen and (min-width: 768px) {
     .img-yacht {
         width: 378px;
-        
     }
 }
     
 .adv-rent {
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
     align-items: center;
     gap: 14px;
     margin-top: 14px;
     margin-left: 24px;
-    right: 24px;
+    margin-right: 24px;
     margin-bottom: 48px;
-    position: absolute;
-    bottom: 0;
+    
 }
 @media screen and (min-width: 768px) {
     .adv-rent {
-
-        margin-left: 32px;
         margin-bottom: 64px;
-        align-items: normal;
-
+        margin-top: 22px;
+        margin-left: 32px;
     }
 }
 .rent-value {
-    display: flex;
     min-width: 104px;
-    height: 46px;
-    flex-direction: column;
-    justify-content: center;
+    height: 46px; 
     color: var(--dark-blue);
     font-size: 48px;
     font-style: normal;
@@ -331,7 +267,6 @@
     line-height: 110%; /* 52.8px */
     letter-spacing: -2.16px;
     text-transform: uppercase;
-    
 }
 @media screen and (min-width: 768px) {
     .rent-value {
@@ -358,8 +293,6 @@
     } 
 }
 @media screen and (min-width: 1280px) {
-
-
 .hero-blur::after {
     content: '';
     position: absolute;
