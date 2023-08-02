@@ -1,6 +1,10 @@
+.about-text-container {
+  display: flex;
+  flex-direction: column;
+}
 @media only screen and (min-width: 1280px) {
-  .about-container {
-    display: flex;
+  .about-text-container {
+    flex-direction: row;
   }
 }
 .about-task-text {
@@ -83,79 +87,38 @@
 .yachts-list li:not(:last-child) {
   margin-bottom: 24px;
 }
+
 @media only screen and (min-width: 768px) {
   .yachts-list li:not(:last-child) {
     margin-bottom: 32px;
   }
 }
-@media only screen and (min-width: 1280px) {
-  .yachts-list {
-    display: flex;
-  }
-}
 @media only screen and (min-width: 768px) {
-  .yacht-under-list {
-    display: flex;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .yachts-list-first-item {
-    margin-left: 340px;
-  }
-  .yachts-list-first-item img {
+  .yacht-list-first-pic {
     max-width: 533px;
+    margin: 0 auto;
   }
 }
-@media only screen and (min-width: 1280px) {
-  .yachts-list-second-item {
-    position: absolute;
-    left: 32px;
-    max-width: 308px;
-    top: 400px;
-  }
+.yachts-list {
 }
-.yachts-list-last-item {
+.yacht-list-last-pic {
   position: absolute;
-  right: 20px;
+  margin-left: 75px;
 }
-
 @media only screen and (min-width: 768px) {
-  .yachts-list-last-item {
-    position: relative;
-    left: 0;
-    top: 200px;
+  .yacht-list-last-pic {
+    margin-left: 352px;
+    margin-top: -120px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .yachts-list-last-item {
+  .yacht-list-last-pic {
+    margin-top: 0px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .yacht-list-second-pic {
     position: absolute;
-    left: 372px;
-    top: 640px;
-  }
-}
-.yachts-list-item {
-  width: 335px;
-}
-.yacht-list-tablet {
-  max-width: 704px;
-}
-@media only screen and (max-width: 1279px) {
-  .yacht-list-desktop {
-    display: none;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .yacht-list-tablet {
-    display: none;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .yacht-list-tablet {
-    display: none;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .yacht-list-phone {
-    display: none;
+    margin-top: -250px;
   }
 }
