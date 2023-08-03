@@ -117,8 +117,8 @@
     left: 0;
     background-image: url(/img/yachtswiper/yacht-bg@1x.png);
     opacity: 0.2105;
-    width: 1508.573px;
-    height: 1611.22px;
+    width: 100%;
+    height: 1611px;
     flex-shrink: 0;
     background-repeat: no-repeat;
   }
