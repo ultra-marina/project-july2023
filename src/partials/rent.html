@@ -11,25 +11,27 @@
         height="187px"
       />
     </div>
+    
     <div class="rent-container-form">
+      
       <form class="rent-form">
         <!-- Name -->
-        <label for="user-name">Full Name</label>
+        <label for="name" class="rent-label rent-name">Full Name</label>
         <div class="rent-input-div">
-          <input type="text" id="user-name" class="rent-input" />
+          <input type="text" id="name" name="user-name" class="rent-input" />
         </div>
         <!-- Email -->
-        <label for="user-email">Email</label>
+        <label for="mail" class="rent-label">Email</label>
         <div class="rent-input-div">
-          <input type="text" id="user-email" class="rent-input" />
+          <input type="email" id="mail" name="user-email"  class="rent-input"  />
         </div>
         <!-- Phone -->
-        <label for="user-phone">Phone number</label>
+        <label for="phone" class="rent-label">Phone number</label>
         <div class="rent-input-div">
-          <input type="text" id="user-phone" class="rent-input" />
+          <input type="tel" id="phone" name="user-phone"  class="rent-input"  />
         </div>
         <!-- comment -->
-        <label for="user-comment">Comment</label>
+        <label for="user-comment" class="rent-label">Comment</label>
         <div class="rent-comment">
           <textarea
             name="user-comment"
@@ -40,22 +42,25 @@
           ></textarea>
         </div>
       </form>
-      <button type="button" class="rent-button" data-modal-open >
+      <button type="submit" class="rent-button" data-modal-open >
         Send
         <svg width="18px" height="8.66px">
           <use href="./img/icons.svg#rent-arrow"></use>
         </svg>
       </button>
     </div>
+    <div class="rent-div-blur"></div>
   </div>
 </section>
+
 <!-- Modal-rent-window -->
 <div class="rent-modal backdrop is-hidden" data-modal>
   <button type="button" class="rent-modal-button" data-modal-close >
     <svg width="20px" height="20px">
-      <use href="../img/icons.svg#close-x"></use>
+      <use href="./img/icons.svg#close-x"></use>
     </svg>
   </button>
+  
   <img 
   srcset="./img/rent/modalmob1x.png 1x, ./img/rent/modalmob2x.png 2x"
   src="./img/rent/modalmob1x.png" alt="rent-yacht-modal" width="287" height="149" class="rent-img-modal">
@@ -65,6 +70,6 @@
     received and our team will be in touch shortly to confirm your reservation
     and provide any additional information or assistance you may need.
   </p>
-
+  <div class="rent-blur"></div>
 </div>
 
