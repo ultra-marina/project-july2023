@@ -68,6 +68,7 @@
   margin-bottom: 24px;
   width: 100%;
   color: var(--white);
+  padding: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -90,8 +91,10 @@
   width: 100%;
   color: var(--white);
   margin-bottom: 24px;
-  display: flex;
+  display: block;
   height: 58px;
+  resize: none;
+  padding: 0px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -133,7 +136,6 @@
   }
 }
 
-
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
   .rent-img {
     width: 271px;
@@ -148,23 +150,89 @@
   }
 }
 
+.rent-label {
+  color: var(--white);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.72px;
+  display: block;
+  height: 17px;
+}
 
+.rent-div-blur::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background: #91afba;
+  filter: blur(100px);
+  z-index: 0;
+  opacity: 0.6;
+  transform: rotate(-44.916deg);
+}
+.rent-div-blur::after {
+  top:415%;
+  right:-40%;
+  width: 283px;
+  height: 283px;
+  opacity: 0.6;
+}
 
+@media only screen and (min-width: 768px) {
+  .rent-div-blur::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background: #91afba;
+    filter: blur(100px);
+    z-index: 5;
+    opacity: 0.6;
+    transform: rotate(-44.916deg);
+  }
+  .rent-div-blur::after {
+    top: 435%;
+    left: 70%;
+    width: 413px;
+    height: 413px;
+    opacity: 0.6;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .rent-div-blur::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background: #91afba;
+    filter: blur(100px);
+    z-index: 5;
+    opacity: 0.6;
+    transform: rotate(-44.916deg);
+  }
+  .rent-div-blur::after {
+    top: 415%;
+    left: 70%;
+    width: 414px;
+    height: 414px;
+    opacity: 0.6;
+  }
+}
 
 /* Modal-rent-window */
 .rent-modal {
   border-radius: 20px;
-  background: var(--blue-2);
+  background-color: var(--blue-2);
   padding: 40px 24px;
   max-width: 335px;
   position: relative;
-  
+  overflow: hidden;
 }
 .backdrop {
   position: fixed;
   top: 20px;
   left: 50%;
-  transform: translate(-50%) scale(1); 
+  transform: translate(-50%) scale(1);
   width: 100%;
 }
 
@@ -185,13 +253,11 @@
   }
 }
 
-
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
-
 
 .rent-modal-button {
   border: none;
@@ -208,7 +274,6 @@
     top: 32px;
   }
 }
-
 
 .rent-modal-title {
   color: var(--white);
@@ -232,7 +297,6 @@
     margin-bottom: 16px;
     margin-top: 21px;
     padding-left: 64px;
-  
   }
 }
 
@@ -257,5 +321,48 @@
     margin: 0 auto;
   }
 }
+.rent-blur::after {
+  content: '';
+  position: absolute;
+  top: 75px;
+  left: 96px;
+  width: 142px;
+  height: 142px;
+  border-radius: 50%;
+  background: #91afba;
+  filter: blur(100px);
+  z-index: -1;
+  opacity: 0.6;
+  transform: rotate(-45.074deg);
+}
+.rent-blur::after {
+  top: 15%;
+  left: 20%;
+  width: 142px;
+  height: 142px;
+  opacity: 0.6;
+}
 
-
+@media only screen and (min-width: 768px) {
+  .rent-blur::after {
+    content: '';
+    position: absolute;
+    top: 75px;
+    left: 96px;
+    width: 142px;
+    height: 142px;
+    border-radius: 50%;
+    background: #91afba;
+    filter: blur(100px);
+    z-index: -1;
+    opacity: 0.6;
+    transform: rotate(-45.074deg);
+  }
+  .rent-blur::after {
+    top: 15%;
+    left: 20%;
+    width: 265px;
+    height: 265px;
+    opacity: 0.6;
+  }
+}
