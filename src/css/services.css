@@ -27,10 +27,12 @@
         display: flex;
         justify-content: center;
     }
+
     .fishing {
         z-index: 1;
         position: sticky;
-}
+    }
+
     .sunbating-item {
         display: flex;
         justify-content: center;
