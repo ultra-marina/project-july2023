@@ -102,7 +102,7 @@
     .services-2item {
         display: flex;
         flex-direction: row;
-        align-items: baseline;
+        align-items: end;
         justify-content: space-between;
         gap: 64px;
         width: 100%;
