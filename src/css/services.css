@@ -18,39 +18,37 @@
 }
 
 @media only screen and (max-width: 767.8px) {
-    .diving-item {
-        display: flex;
-        justify-content: center;
-    }
-
-    .fishing-item {
-        display: flex;
-        justify-content: center;
-    }
-    .fishing {
-        z-index: 1;
-        position: sticky;
+.diving-item {
+    display: flex;
+    justify-content: center;
 }
-    .sunbating-item {
-        display: flex;
-        justify-content: center;
-    }
 
-    .services-img {
-        width: 335px;
-    }
+.fishing {
+    z-index: 1;
+    position: sticky;
+}
 
-    .services-2item {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
-
-    .services-3item {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
+.fishing-item {
+    display: flex;
+    justify-content: center;
+}
+.sunbating-item {
+    display: flex;
+    justify-content: center;
+}
+.services-img {
+    width: 335px;
+}
+.services-2item {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.services-3item {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
 }
 
 @media only screen and (min-width: 768px) {
@@ -58,13 +56,11 @@
         max-width: 100%;
         gap: 32px;
     }
-
     .services-2item {
         display: flex;
         flex-direction: column;
         gap: 32px;
-    }
-
+}
     .diving-item {
         display: flex;
         justify-content: center;
@@ -74,7 +70,6 @@
         display: flex;
         justify-content: flex-end;
     }
-
     .sunbating-item {
         display: flex;
         justify-content: flex-start;
@@ -106,7 +101,6 @@
         width: 100%;
         justify-content: center;
     }
-
     .services-3item {
         display: flex;
         flex-wrap: wrap;
@@ -120,6 +114,8 @@
 
     .diving {
         width: 100%;
+        z-index: 1;
+        position: sticky;
     }
 }
 
@@ -141,7 +137,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .diving {
+    .diving {        
         width: 704px;
         height: 632px;
         align-items: center;
@@ -150,14 +146,12 @@
         z-index: 1;
         position: sticky;
     }
-
     .fishing {
         width: 400px;
         height: 389px;
         border-radius: 40px;
         background: linear-gradient(0deg, rgba(17, 19, 31, 0.20) 0%, rgba(17, 19, 31, 0.20) 100%), url(<path-to-image>), lightgray -4.545px -69.718px / 102.045% 135.611% no-repeat;
     }
-
     .sunbating {
         width: 380px;
         height: 352px;
@@ -165,7 +159,6 @@
         background: linear-gradient(0deg, rgba(17, 19, 31, 0.20) 0%, rgba(17, 19, 31, 0.20) 100%), url(<path-to-image>), lightgray -17.406px 0px / 123.898% 100% no-repeat;
         margin-left: 32px;
     }
-
     .services-name-sun {
         margin-left: 32px;
     }
@@ -190,14 +183,12 @@
         z-index: 1;
         position: sticky;
     }
-
     .fishing {
         width: 440px;
         height: 428px;
         border-radius: 44px;
         background: linear-gradient(0deg, rgba(17, 19, 31, 0.20) 0%, rgba(17, 19, 31, 0.20) 100%), url(<path-to-image>), lightgray -5px -76.707px / 102.045% 135.611% no-repeat;
-    }
-
+    }    
     .sunbating {
         width: 436px;
         height: 352px;
@@ -264,7 +255,7 @@
         height: 414px;
         transform: rotate(-45.074deg);
         border-radius: 414px;
-        top: 3280px;
+        top: 3480px;
         right: 993px;
     }
 }
