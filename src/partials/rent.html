@@ -2,14 +2,13 @@
   <div class="container rent-container">
     <div class="rent-container-div">
       <h2 class="rent-title">Rent a yacht now</h2>
-      <img
-        class="rent-img"
-        srcset="./img/rent/imgmob1x.png 1x, ./img/rent/imgmob2x.png 2x"
-        src="./img/rent.img/imgyaht1.jpg"
-        alt="yacht-rent"
-        width="259px"
-        height="187px"
-      />
+      <picture>
+        <source srcset="/img/rent/imgdekstop1x.png 1x, /img/rent/imgdekstop2x.png 2x" media="(min-width: 1280px)">
+        <source srcset="/img/rent/imgtab1x.png 1x, /img/rent/imgtab2x.png 2x" media="(min-width: 768px)">
+        <source srcset="/img/rent/imgmob1x.png 1x, /img/rent/imgmob2x.png 2x" media="(max-width: 767px)">
+
+        <img class=".rent-img" src="/img/rent/imgmob1x.png" alt="Yaht" width="" height="">
+      </picture>
     </div>
 
     <div class="rent-container-form">
