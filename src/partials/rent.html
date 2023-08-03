@@ -11,9 +11,8 @@
         height="187px"
       />
     </div>
-    
+
     <div class="rent-container-form">
-      
       <form class="rent-form">
         <!-- Name -->
         <label for="name" class="rent-label rent-name">Full Name</label>
@@ -23,12 +22,12 @@
         <!-- Email -->
         <label for="mail" class="rent-label">Email</label>
         <div class="rent-input-div">
-          <input type="email" id="mail" name="user-email"  class="rent-input"  />
+          <input type="email" id="mail" name="user-email" class="rent-input" />
         </div>
         <!-- Phone -->
         <label for="phone" class="rent-label">Phone number</label>
         <div class="rent-input-div">
-          <input type="tel" id="phone" name="user-phone"  class="rent-input"  />
+          <input type="tel" id="phone" name="user-phone" class="rent-input" />
         </div>
         <!-- comment -->
         <label for="user-comment" class="rent-label">Comment</label>
@@ -41,29 +40,33 @@
             class="rent-textarea"
           ></textarea>
         </div>
+        <button type="button" class="rent-button" data-modal-open>
+          Send
+          <svg width="18px" height="8.66px">
+            <use href="./img/icons.svg#rent-arrow"></use>
+          </svg>
+        </button>
       </form>
-      <button type="submit" class="rent-button" data-modal-open >
-        Send
-        <svg width="18px" height="8.66px">
-          <use href="./img/icons.svg#rent-arrow"></use>
-        </svg>
-      </button>
     </div>
-    <div class="rent-div-blur"></div>
   </div>
 </section>
 
 <!-- Modal-rent-window -->
 <div class="rent-modal backdrop is-hidden" data-modal>
-  <button type="button" class="rent-modal-button" data-modal-close >
-    <svg width="20px" height="20px">
+  <button type="button" class="rent-modal-button" data-modal-close>
+    <svg width="20px" height="20px" class="x-rent">
       <use href="./img/icons.svg#close-x"></use>
     </svg>
   </button>
-  
-  <img 
-  srcset="./img/rent/modalmob1x.png 1x, ./img/rent/modalmob2x.png 2x"
-  src="./img/rent/modalmob1x.png" alt="rent-yacht-modal" width="287" height="149" class="rent-img-modal">
+
+  <img
+    srcset="./img/rent/modalmob1x.png 1x, ./img/rent/modalmob2x.png 2x"
+    src="./img/rent/modalmob1x.png"
+    alt="rent-yacht-modal"
+    width="287"
+    height="149"
+    class="rent-img-modal"
+  />
   <h2 class="rent-modal-title">Thank you</h2>
   <p class="rent-modal-page">
     Thank you for choosing Yacht Adventures, your booking details have been
@@ -72,4 +75,3 @@
   </p>
   <div class="rent-blur"></div>
 </div>
-
