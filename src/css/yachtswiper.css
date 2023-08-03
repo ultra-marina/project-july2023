@@ -6,6 +6,10 @@
 
 /* Yachts Header styles*/
 
+.yachts-container {
+    position: relative;
+}
+
 .yachts-header-container {
     position: relative;
     display: flex;
@@ -106,6 +110,26 @@
         width: 414px;
         height: 414px;
         transform: translateX(15%) translateY(-20%) rotate(-45.074deg);
+    }
+
+    .yachts-bg-waves {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-image: url(../img/yachtswiper/yacht-bg@1x.png);
+        opacity: 0.2105;
+        width: 1508.573px;
+        height: 1611.22px;
+        flex-shrink: 0;
+        background-repeat: no-repeat;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .yachts-bg-waves {
+            background-image: url(../img/yachtswiper/yacht-bg@2x.png);
+        }
     }
 }
 
