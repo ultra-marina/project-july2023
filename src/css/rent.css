@@ -50,7 +50,6 @@
   }
 }
 
-
 .rent-container-div {
   margin-bottom: 40px;
 }
@@ -132,7 +131,7 @@
 }
 
 @media only screen and (max-width: 767px) {
-   .rent-img {
+  .rent-img {
     width: 259px;
     height: 187px;
   }
@@ -222,31 +221,53 @@
     
   }
 } */
- 
- 
+
 /* Modal-rent-window */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-blue);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: scroll;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .rent-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
   border-radius: 20px;
   background-color: var(--blue-2);
   padding: 40px 24px;
-  max-width: 335px;
-  position: relative;
+  flex-shrink: 0;
+  width: 335px;
+  height: 396px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   overflow: hidden;
   z-index: 999;
 }
-.backdrop {
-  position: fixed;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%) scale(1);
-  width: 100%;
+@media only screen and (max-width: 374.8px) {
+  .rent-modal {
+    max-width: 95%;
+  }
 }
-
 @media only screen and (min-width: 768px) {
   .rent-modal {
-    max-width: 570px;
-    padding-left: 0;
-    padding-right: 0;
+    width: 570px;
+    height: 522px;
+    padding-left: 64px;
+    padding-right: 64px;
     padding-top: 97px;
     padding-bottom: 64px;
   }
@@ -259,12 +280,6 @@
   }
 }
 
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
 .rent-modal-button {
   border: none;
   background-color: var(--blue-2) transparent;
@@ -272,7 +287,6 @@
   position: absolute;
   right: 14px;
   top: 14px;
-  
 }
 
 @media only screen and (min-width: 768px) {
@@ -303,7 +317,6 @@
     letter-spacing: -1.44px;
     margin-bottom: 16px;
     margin-top: 21px;
-    padding-left: 64px;
   }
 }
 
@@ -373,6 +386,3 @@
     opacity: 0.6;
   }
 }
-
-
-
