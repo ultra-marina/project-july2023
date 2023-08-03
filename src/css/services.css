@@ -27,10 +27,12 @@
         display: flex;
         justify-content: center;
     }
+
     .fishing {
         z-index: 1;
         position: sticky;
-}
+    }
+
     .sunbating-item {
         display: flex;
         justify-content: center;
@@ -100,7 +102,7 @@
     .services-2item {
         display: flex;
         flex-direction: row;
-        align-items: baseline;
+        align-items: end;
         justify-content: space-between;
         gap: 64px;
         width: 100%;
