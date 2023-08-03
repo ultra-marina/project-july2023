@@ -46,11 +46,6 @@
         gap: 24px;
     }
 
-    .services-3item {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -80,11 +75,6 @@
         justify-content: flex-start;
     }
 
-    .services-3item {
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-    }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -101,17 +91,10 @@
         display: flex;
         flex-direction: row;
         align-items: baseline;
-        justify-content: space-between;
         gap: 64px;
         width: 100%;
         justify-content: center;
-    }
-
-    .services-3item {
-        display: flex;
         flex-wrap: wrap;
-        gap: 64px;
-        justify-content: center;
     }
 
     .sunbating-item {
@@ -267,4 +250,16 @@
         top: 3280px;
         right: 993px;
     }
+    
 }
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .fishing-item{
+        margin-left: auto;
+    }
+    .sunbating-item{
+        margin-left: 32px;
+        margin-right: auto;
+    }
+}
+    
