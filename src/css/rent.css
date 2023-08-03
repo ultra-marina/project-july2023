@@ -160,6 +160,7 @@
   display: block;
   height: 17px;
 }
+
 /* 
  .rent-div-blur::after {
   content: '';
@@ -221,9 +222,6 @@
 } */
  
  
-
-
-
 /* Modal-rent-window */
 .rent-modal {
   border-radius: 20px;
