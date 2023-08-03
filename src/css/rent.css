@@ -1,5 +1,8 @@
+
 .rent-container {
   flex-direction: column;
+  position: relative;
+  
 }
 
 .rent-title {
@@ -161,63 +164,6 @@
   height: 17px;
 }
 
-.rent-div-blur::after {
-  content: '';
-  position: absolute;
-  border-radius: 50%;
-  background: #91afba;
-  filter: blur(100px);
-  z-index: 0;
-  opacity: 0.6;
-  transform: rotate(-44.916deg);
-}
-.rent-div-blur::after {
-  top:415%;
-  right:-40%;
-  width: 283px;
-  height: 283px;
-  opacity: 0.6;
-}
-
-@media only screen and (min-width: 768px) {
-  .rent-div-blur::after {
-    content: '';
-    position: absolute;
-    border-radius: 50%;
-    background: #91afba;
-    filter: blur(100px);
-    z-index: 5;
-    opacity: 0.6;
-    transform: rotate(-44.916deg);
-  }
-  .rent-div-blur::after {
-    top: 435%;
-    left: 70%;
-    width: 413px;
-    height: 413px;
-    opacity: 0.6;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .rent-div-blur::after {
-    content: '';
-    position: absolute;
-    border-radius: 50%;
-    background: #91afba;
-    filter: blur(100px);
-    z-index: 5;
-    opacity: 0.6;
-    transform: rotate(-44.916deg);
-  }
-  .rent-div-blur::after {
-    top: 415%;
-    left: 70%;
-    width: 414px;
-    height: 414px;
-    opacity: 0.6;
-  }
-}
 
 /* Modal-rent-window */
 .rent-modal {
@@ -261,11 +207,12 @@
 
 .rent-modal-button {
   border: none;
-  background-color: var(--blue-2);
+  background-color: var(--blue-2) transparent;
   margin-bottom: 6px;
   position: absolute;
   right: 14px;
   top: 14px;
+  
 }
 
 @media only screen and (min-width: 768px) {
@@ -366,3 +313,6 @@
     opacity: 0.6;
   }
 }
+
+
+
