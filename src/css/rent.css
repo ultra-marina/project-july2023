@@ -130,26 +130,7 @@
   gap: 16px;
 }
 
-@media only screen and (max-width: 767px) {
-  .rent-img {
-    width: 259px;
-    height: 187px;
-  }
-}
 
-@media only screen and (min-width: 768px) {
-  .rent-img {
-    width: 271px;
-    height: 187px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .rent-img {
-    width: 282px;
-    height: 191px;
-  }
-}
 
 .rent-label {
   color: var(--white);
