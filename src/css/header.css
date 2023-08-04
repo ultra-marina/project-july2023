@@ -1,44 +1,17 @@
 
- .header-nav::after {
-    content:'';
-    width: 335px;
-    height: 1px;
-    background-color: rgba(246, 245, 239, 0.20);
-    position: absolute;
-    top: 72px;
-}
-
-@media only screen and (min-width: 768px) {
-    .header-nav::after {
-        width: 704px;
-        top: 87px;
-    }
-}
-
-@media only screen and (min-width: 1280px) {
-    .header-nav::after {
-        width: 1216px;
-    }
-}
-
 .header-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
     position: relative;
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(246, 245, 239, 0.20);
 }
 
- .header-logotype {
-    display: flex;
-    margin: 24px 0;
-    gap: 8px;
-    align-items: center;
-} 
-
 @media only screen and (min-width: 768px) {
-    .header-logotype {
-        margin: 32px 0;
+    .header-nav {
+        padding: 32px 0;
     }
 }
 
@@ -86,7 +59,6 @@
         align-items: center;
         flex-wrap: nowrap;
         gap: 24px;
-        margin: 32px 0;
     }
 }
 
@@ -107,11 +79,12 @@
 */
 
 .header-logotype-menu {
-    padding: 0 20px;
     display: flex;
-    margin: 24px 0;
-    gap: 8px;
     align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(246, 245, 239, 0.20);
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .menu-toggle-icon {
@@ -152,6 +125,7 @@
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
   overflow: hidden;
+  padding: 0 20px;
 }
 
 @media (min-width: 768px) {
@@ -160,15 +134,11 @@
     }
 }
 
-
 .menu-container.is-open {
   transform: translateX(0);
 }
 
 .menu-container .menu-toggle {
-  position: absolute;
-  top: 21px;
-  right: 16px;
   color: var(--white);
 }
 
@@ -177,16 +147,6 @@
     flex-direction: column;
     align-items: center;
     margin-top: 164px;
-   
-}
-
-.header-logotype-menu::after {
-    content: '';
-    height: 1px;
-    background-color: rgba(246, 245, 239, 0.20);
-    position: absolute;
-    top: 72px;
-    width: calc(100% - 40px);
 }
 
 .mobile-menu .link {
@@ -240,6 +200,5 @@
     top: 614px;
     left: 53px;
     z-index: 0;
-    
 } 
 
