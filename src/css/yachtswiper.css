@@ -124,8 +124,8 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .yachts-bg-waves {
       background-image: url(/img/yachtswiper/yacht-bg@2x.png);
     }
@@ -163,6 +163,7 @@
   font-weight: 700;
   margin-bottom: 24px;
   letter-spacing: -0.72px;
+  line-height: 120%
 }
 
 .yachtswiper-header {
@@ -178,21 +179,16 @@
   font-weight: 400;
 }
 
-.ys-desc-left-list {
-  display: inline-flex;
-  gap: 6px;
-  flex-direction: column;
-  margin-right: 34px;
+.ys-desc-table {
   font-size: 14px;
-  letter-spacing: 0.42px;
+  line-height: 118%;
+  letter-spacing: 0.42px
 }
 
-.ys-desc-right-list {
-  display: inline-flex;
-  gap: 6px;
-  flex-direction: column;
-  font-size: 14px;
-  letter-spacing: 0.42px;
+.ys-desc-table th {
+  font-weight: 400;
+  width: 90px;
+  height: 22px;
 }
 
 .ys-btn-list {
