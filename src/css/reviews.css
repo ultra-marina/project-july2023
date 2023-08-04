@@ -1,5 +1,5 @@
 .review-container{
-    padding: 32px 25px;
+    padding: 32px 0;
 }
 .pre-reviews-div{
     display: flex;
@@ -19,7 +19,7 @@ width: 497px;
 }
 
 .span-pre-reviews-text{
-    color: var(--linear-green);
+color: linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%);
 font-family: 'DM Sans', sans-serif;
 font-size: 32px;
 font-style: italic;
@@ -28,7 +28,7 @@ line-height: 120%; /* 38.4px */
 letter-spacing: -1.44px;
 }
 .pre-reviews-paragraph{
-    color: var(--white, #F6F5EF);
+color: var(--white, #F6F5EF);
 font-family: DM Sans;
 font-size: 16px;
 font-style: normal;
