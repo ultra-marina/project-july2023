@@ -2,10 +2,17 @@
 .about-text-container {
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .about-text-container {
+    margin-bottom: 64px;
+  }
 }
 @media only screen and (min-width: 1280px) {
   .about-text-container {
     flex-direction: row;
+    gap: 302px;
   }
 }
 .about-task-text {
@@ -30,7 +37,6 @@
 /* Desktop */
 @media only screen and (min-width: 1280px) {
   .about-task-text {
-    margin-right: 302px;
   }
 }
 .yacht-adventures {
@@ -56,7 +62,6 @@
 }
 .about-desc-list {
   display: flex;
-  margin-bottom: 40px;
   gap: 14px;
 }
 @media only screen and (min-width: 768px) {
@@ -85,6 +90,7 @@
 @media only screen and (min-width: 1280px) {
   .about-desc-item {
     font-size: 16px;
+    max-width: 183px;
   }
 }
 /* Yachts Images */
