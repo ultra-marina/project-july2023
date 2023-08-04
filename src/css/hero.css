@@ -269,9 +269,13 @@
   display: flex;
   align-items: center;
   gap: 14px;
-  padding-left: 8px;
+  
 }
-
+@media screen and (min-width: 1280px) {
+  .adv-rent {
+    padding-left: 8px;
+  }
+}
 .rent-value {
   min-width: 104px;
   color: var(--dark-blue);
@@ -295,7 +299,7 @@
   font-weight: 400;
   line-height: 140%; /* 19.6px */
   letter-spacing: -0.63px;
-  min-width: 169px;
+ 
 }
 @media screen and (min-width: 768px) {
   .adv-description {
