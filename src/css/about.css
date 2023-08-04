@@ -1,4 +1,18 @@
 /* Text */
+#about-section {
+  padding: 0;
+  margin-bottom: 146px;
+}
+@media only screen and (min-width: 768px) {
+  #about-section {
+    margin-bottom: 83px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  #about-section {
+    margin-bottom: 164px;
+  }
+}
 .about-text-container {
   display: flex;
   flex-direction: column;
